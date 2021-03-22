@@ -19,6 +19,7 @@ CLASS net/minecraft/class_5141 net/minecraft/world/gen/trunk/TrunkPlacer
 	METHOD method_26993 getHeight (Ljava/util/Random;)I
 		ARG 1 random
 	METHOD method_27400 setToDirt (Lnet/minecraft/class_3747;Ljava/util/Random;Lnet/minecraft/class_2338;Lnet/minecraft/class_4643;)V
+		COMMENT Sets the block at the given position to dirt using the dirt provider in the config.
 		ARG 0 world
 		ARG 1 random
 		ARG 2 pos

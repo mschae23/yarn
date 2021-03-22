@@ -39,8 +39,15 @@ CLASS net/minecraft/class_4643 net/minecraft/world/gen/feature/TreeFeatureConfig
 			ARG 5 minimumSize
 		METHOD method_23445 build ()Lnet/minecraft/class_4643;
 		METHOD method_27374 ignoreVines ()Lnet/minecraft/class_4643$class_4644;
+			COMMENT Makes the tree ignore vines when determining how tall it can grow. Normally, vines block the tree.
 		METHOD method_27376 decorators (Ljava/util/List;)Lnet/minecraft/class_4643$class_4644;
+			COMMENT Sets the list of tree decorators for this tree feature. These can be used to place vines, beehives, etc. on the tree.
+			COMMENT They're separate from feature decorators.
 			ARG 1 decorators
+				COMMENT The list of tree decorators.
 		METHOD method_34346 dirtProvider (Lnet/minecraft/class_4651;)Lnet/minecraft/class_4643$class_4644;
+			COMMENT Sets the dirt provider for this tree feature. The trunk placer places the block state given by it under the trunk.
 			ARG 1 dirtProvider
+				COMMENT The dirt provider for this tree feature.
 		METHOD method_34347 forceDirt ()Lnet/minecraft/class_4643$class_4644;
+			COMMENT Forces the tree to place dirt under the trunk.

@@ -3,11 +3,17 @@ CLASS net/minecraft/class_5721 net/minecraft/world/gen/feature/util/CaveSurface
 	METHOD method_32981 createHalfWithCeiling (I)Lnet/minecraft/class_5721;
 		ARG 0 ceiling
 	METHOD method_32982 create (Lnet/minecraft/class_3746;Lnet/minecraft/class_2338;ILjava/util/function/Predicate;Ljava/util/function/Predicate;)Ljava/util/Optional;
+		COMMENT Tries to find a cave surface up and down in the given search range.
+		COMMENT
+		COMMENT @return an instance of one of its subclasses depending on if the surface was found, or nothing.
 		ARG 0 world
 		ARG 1 pos
-		ARG 2 height
-		ARG 3 canGenerate
-		ARG 4 canReplace
+		ARG 2 searchRange
+			COMMENT how many blocks it will move up and down to find a cave surface.
+		ARG 3 shouldKeepSearching
+			COMMENT if this block is not the surface. Usually returns {@code true} for blocks like air.
+		ARG 4 isSurfaceBlock
+			COMMENT if the surface was found. Usually returns {@code true} for solid blocks.
 	METHOD method_32983 withFloor (Ljava/util/OptionalInt;)Lnet/minecraft/class_5721;
 		ARG 1 floor
 	METHOD method_32984 create (Ljava/util/OptionalInt;Ljava/util/OptionalInt;)Lnet/minecraft/class_5721;
@@ -22,13 +28,21 @@ CLASS net/minecraft/class_5721 net/minecraft/world/gen/feature/util/CaveSurface
 		ARG 0 floor
 	METHOD method_33385 getOptionalHeight ()Ljava/util/OptionalInt;
 	METHOD method_34280 getCaveSurface (Lnet/minecraft/class_3746;ILjava/util/function/Predicate;Ljava/util/function/Predicate;Lnet/minecraft/class_2338$class_2339;ILnet/minecraft/class_2350;)Ljava/util/OptionalInt;
+		COMMENT Moves vertically in the given direction until it finds a cave surface, which means that {@code shouldKeepSearching} returned {@code false} for a block, or the search range was reached.
+		COMMENT If {@code isSurfaceBlock} then returns {@code true}, the method will return that height, otherwise nothing.
 		ARG 0 world
-		ARG 1 height
-		ARG 2 canGenerate
-		ARG 3 canReplace
+		ARG 1 searchRange
+			COMMENT how many blocks it will move to find a cave surface.
+		ARG 2 shouldKeepSearching
+			COMMENT if this block is not the surface. Usually returns {@code true} for blocks like air.
+		ARG 3 isSurfaceBlock
+			COMMENT if the surface was found. Usually returns {@code true} for solid blocks.
 		ARG 4 mutablePos
+			COMMENT the start position. The Y level of this is not used.
 		ARG 5 y
+			COMMENT the start height.
 		ARG 6 direction
+			COMMENT the direction the method will move. Can only be {@code UP} or {@code DOWN}.
 	CLASS class_5722 Empty
 		FIELD field_28197 INSTANCE Lnet/minecraft/class_5721$class_5722;
 	CLASS class_5723 Bounded
