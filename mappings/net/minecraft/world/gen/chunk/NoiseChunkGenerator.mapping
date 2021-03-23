@@ -58,9 +58,19 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 		ARG 2 chunk
 		ARG 3 minY
 		ARG 4 noiseSizeY
+	METHOD method_33755 (Ljava/util/Set;Lnet/minecraft/class_2791;)Lnet/minecraft/class_2791;
+		ARG 1 chunk
+	METHOD method_34281 (DLnet/minecraft/class_5917;)V
+		ARG 2 interpolator
+	METHOD method_34282 (IILnet/minecraft/class_5917;)V
+		ARG 2 interpolator
+	METHOD method_34283 (ILnet/minecraft/class_5917;)V
+		ARG 1 interpolator
 	METHOD method_34284 sampleNoiseColumn ([DIIII)V
 		ARG 1 buffer
 		ARG 2 x
 		ARG 3 z
 		ARG 4 minY
 		ARG 5 noiseSizeY
+	METHOD method_34285 (DLnet/minecraft/class_5917;)V
+		ARG 2 interpolator
