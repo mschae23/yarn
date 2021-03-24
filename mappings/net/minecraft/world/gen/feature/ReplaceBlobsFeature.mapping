@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_5155 net/minecraft/world/gen/feature/ReplaceBlobsFeature
 	METHOD method_27107 moveDownToTarget (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2338;
+		COMMENT Moves down until it finds the {@code target} block.
 		ARG 0 world
 		ARG 1 mutablePos
+			COMMENT the start position. The y level of this will be changed to the height that the method finds.
 		ARG 2 target
+			COMMENT the {@link Block} that the method should be searching for.

@@ -8,20 +8,30 @@ CLASS net/minecraft/class_5922 net/minecraft/world/gen/feature/VegetationPatchFe
 		ARG 4 random
 		ARG 5 pos
 	METHOD method_34316 placeGroundAndGetPositions (Lnet/minecraft/class_5281;Lnet/minecraft/class_5927;Ljava/util/Random;Lnet/minecraft/class_2338;Ljava/util/function/Predicate;II)Ljava/util/Set;
+		COMMENT Places the ground blocks in the given radius and returns the set of positions that vegetation will be generated on.
 		ARG 1 world
 		ARG 2 config
 		ARG 3 random
 		ARG 4 pos
+			COMMENT the start position, which is in the center of the vegetation patch.
 		ARG 5 replaceable
+			COMMENT returns whether the block can be replaced with the ground block.
 		ARG 6 radiusX
+			COMMENT the x radius of the vegetation patch.
 		ARG 7 radiusZ
+			COMMENT the z radius of the vegetation patch.
 	METHOD method_34317 placeGround (Lnet/minecraft/class_5281;Lnet/minecraft/class_5927;Ljava/util/function/Predicate;Ljava/util/Random;Lnet/minecraft/class_2338$class_2339;I)Z
+		COMMENT Places the ground block at the given position for a number of {@code depth} blocks in the direction specified in the config.
+		COMMENT If it finds a block that {@code replaceable} returns false for, it will stop.
 		ARG 1 world
 		ARG 2 config
 		ARG 3 replaceable
+			COMMENT returns whether the block can be replaced with the ground block.
 		ARG 4 random
 		ARG 5 pos
+			COMMENT the start position. This will be changed to the position that the last block was placed at.
 		ARG 6 depth
+			COMMENT the maximum number of blocks that the method will place.
 	METHOD method_34318 generateVegetation (Lnet/minecraft/class_5821;Lnet/minecraft/class_5281;Lnet/minecraft/class_5927;Ljava/util/Random;Ljava/util/Set;II)V
 		ARG 1 context
 		ARG 2 world

@@ -57,5 +57,6 @@ CLASS net/minecraft/class_2944 net/minecraft/world/gen/feature/TreeFeature
 		COMMENT Gets the height that this tree can generate at.
 		ARG 1 world
 		ARG 2 height
+			COMMENT the height that the trunk placer could generate at.
 		ARG 3 pos
 		ARG 4 config

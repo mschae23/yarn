@@ -1,25 +1,42 @@
 CLASS net/minecraft/class_5153 net/minecraft/world/gen/feature/BasaltColumnsFeature
 	FIELD field_24132 BLOCKS Lcom/google/common/collect/ImmutableList;
 	METHOD method_27094 moveDownToGround (Lnet/minecraft/class_1936;ILnet/minecraft/class_2338$class_2339;I)Lnet/minecraft/class_2338;
+		COMMENT Moves down until it finds a block that is not air and that is not in {@link #BLOCKS}.
+		COMMENT
+		COMMENT @return the position of the air block above the ground, or {@code null}.
 		ARG 0 world
 		ARG 1 seaLevel
 		ARG 2 mutablePos
+			COMMENT the start position. The y level of this will be changed to the height the method finds.
 		ARG 3 distance
+			COMMENT the maximum number of blocks the method will move to find the ground. If the ground hasn't been found when the distance is reached, {@code mutablePos} will still be changed to the height the method got to when it stopped.
 	METHOD method_27095 isAirOrLavaOcean (Lnet/minecraft/class_1936;ILnet/minecraft/class_2338;)Z
+		COMMENT Checks if the block at the given position is air, or lava under sea level.
 		ARG 0 world
 		ARG 1 seaLevel
 		ARG 2 pos
-	METHOD method_27096 placeBasaltColumn (Lnet/minecraft/class_1936;ILnet/minecraft/class_2338;II)Z
+	METHOD method_27096 generateBasaltColumn (Lnet/minecraft/class_1936;ILnet/minecraft/class_2338;II)Z
+		COMMENT Generates a basalt column at the given position, with an offset between 0 and {@code reach}.
+		COMMENT If that position is in air or in a lava ocean and not already on the ground, the method will attempt to find the ground by moving down first. If it is in other blocks, the method will move up until it finds air.
+		COMMENT This is repeated until a suitable position for the basalt column is found.
 		ARG 1 world
 		ARG 2 seaLevel
 		ARG 3 pos
 		ARG 4 height
+			COMMENT the height of the column. This is reduced by the distance to the start position.
 		ARG 5 reach
+			COMMENT the reach of the position that the column will be placed at, from the start position.
 	METHOD method_27098 moveUpToAir (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338$class_2339;I)Lnet/minecraft/class_2338;
+		COMMENT Moves up until it finds an air block. If there is a block that is in the {@link #BLOCKS} list somewhere in between the start position and the air, the method will return {@code null}.
+		COMMENT
+		COMMENT @return the position of the air block that was found, or {@code null}.
 		ARG 0 world
 		ARG 1 mutablePos
+			COMMENT the start position. The y level of this will be changed to the height that the method finds.
 		ARG 2 distance
+			COMMENT the maximum number of blocks the method will move to find air. If air hasn't been found when the distance is reached, {@code mutablePos} will still be changed to the height the method got to when it stopped.
 	METHOD method_30379 canPlaceAt (Lnet/minecraft/class_1936;ILnet/minecraft/class_2338$class_2339;)Z
+		COMMENT Checks if the block in the given position is air or is in a lava ocean, and the block below that is not air and is not in {@link #BLOCKS}.
 		ARG 0 world
 		ARG 1 seaLevel
 		ARG 2 mutablePos
