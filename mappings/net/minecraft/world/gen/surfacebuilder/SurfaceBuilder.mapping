@@ -28,48 +28,85 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 		ARG 3 seaLevel
 		ARG 4 seed
 		ARG 6 randomProvider
-	METHOD method_39102 (IDLnet/minecraft/class_6557;III)V
+	METHOD method_39102 placeErodedBadlandsPillars (IDLnet/minecraft/class_6557;III)V
+		COMMENT Generates the pillars found in eroded badlands biomes.
+		ARG 1 minY
+			COMMENT the minimum height to generate pillars
+		ARG 2 surfaceNoise
+			COMMENT the current value of the surface noise
 		ARG 4 chunk
 		ARG 5 x
 		ARG 6 z
+		ARG 7 surfaceY
+			COMMENT the height of the surface
 	METHOD method_39103 getTerracottaBlock (III)Lnet/minecraft/class_2680;
+		COMMENT {@return the terracotta block to generate at a given location.} Used by the
+		COMMENT {@code minecraft:bandlands} material rule.
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_39104 (ILnet/minecraft/class_1959;DLnet/minecraft/class_6557;Lnet/minecraft/class_2338$class_2339;III)V
+	METHOD method_39104 placeFrozenOceanIcebergs (ILnet/minecraft/class_1959;DLnet/minecraft/class_6557;Lnet/minecraft/class_2338$class_2339;III)V
+		COMMENT Generates the icebergs found in frozen oceans.
+		ARG 1 minY
+			COMMENT the minimum height to generate icebergs at
 		ARG 2 biome
+			COMMENT the current biome
+		ARG 3 surfaceNoise
+			COMMENT the current value of the surface noise
 		ARG 5 chunk
 		ARG 6 mutablePos
+			COMMENT the current block position. Only the horizontal coordinates are used
 		ARG 7 x
 		ARG 8 z
 		ARG 9 surfaceY
+			COMMENT the height of the surface
 	METHOD method_39106 buildSurface (Lnet/minecraft/class_4543;Lnet/minecraft/class_2378;ZLnet/minecraft/class_5868;Lnet/minecraft/class_2791;Lnet/minecraft/class_6568;Lnet/minecraft/class_6686$class_6708;)V
+		COMMENT Replaces the blocks at the surface in a chunk using a given surface rule.
 		ARG 1 biomeAccess
 		ARG 2 biomeRegistry
 		ARG 3 useLegacyRandom
 		ARG 4 context
 		ARG 5 chunk
+			COMMENT the chunk to build the surface in
 		ARG 6 chunkNoiseSampler
 		ARG 7 surfaceRule
+			COMMENT the surface rule to use
 	METHOD method_39107 getBlockStateToPlace (Lnet/minecraft/class_6557;ILnet/minecraft/class_2680;D)Lnet/minecraft/class_2680;
+		COMMENT {@return the {@link BlockState} that should actually be placed at some position.}
+		COMMENT This method changes grass blocks to dirt underwater and changes falling blocks
+		COMMENT to normal ones if they could fall.
 		ARG 1 chunk
 		ARG 2 y
+			COMMENT height of the block to be placed
 		ARG 3 state
+			COMMENT the {@link BlockState} to be placed
 		ARG 4 waterHeight
+			COMMENT the water level
 	METHOD method_39108 createTerracottaBands (Lnet/minecraft/class_5819;)[Lnet/minecraft/class_2680;
+		COMMENT Creates the terracotta patterns used for badlands.
+		COMMENT Used by the {@code minecraft:bandlands} material rule.
 		ARG 0 random
 	METHOD method_39109 addTerracottaBands (Lnet/minecraft/class_5819;[Lnet/minecraft/class_2680;ILnet/minecraft/class_2680;)V
+		COMMENT Adds bands for a specific type of terracotta to the terracotta bands array.
 		ARG 0 random
 		ARG 1 terracottaBands
+			COMMENT the array to add the terracotta bands to
 		ARG 2 minBandSize
+			COMMENT the minimum vertical size of a terracotta band
 		ARG 3 state
-	METHOD method_39110 (Lnet/minecraft/class_6686$class_6708;Lnet/minecraft/class_5873;Lnet/minecraft/class_1959;Lnet/minecraft/class_5321;Lnet/minecraft/class_2791;Lnet/minecraft/class_2338;Z)Ljava/util/Optional;
+			COMMENT the {@link BlockState} to use
+	METHOD method_39110 applyMaterialRule (Lnet/minecraft/class_6686$class_6708;Lnet/minecraft/class_5873;Lnet/minecraft/class_1959;Lnet/minecraft/class_5321;Lnet/minecraft/class_2791;Lnet/minecraft/class_2338;Z)Ljava/util/Optional;
+		COMMENT Applies a material rule at a given position.
 		ARG 1 rule
+			COMMENT the material rule to use
 		ARG 2 context
 		ARG 3 biome
 		ARG 4 biomeKey
 		ARG 5 chunk
 		ARG 6 pos
+			COMMENT the position to apply the material rule at
+		ARG 7 usePosForWaterHeight
+			COMMENT whether the height of the position should be used for the water level
 	METHOD method_39111 (Lnet/minecraft/class_5216$class_5487;Ljava/lang/String;)Lnet/minecraft/class_5216;
 		ARG 2 name
 	METHOD method_39112 getNoiseSampler (Ljava/lang/String;Lnet/minecraft/class_5216$class_5487;)Lnet/minecraft/class_5216;

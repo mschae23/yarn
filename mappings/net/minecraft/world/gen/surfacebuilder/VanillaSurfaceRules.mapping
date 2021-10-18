@@ -30,6 +30,7 @@ CLASS net/minecraft/class_6725 net/minecraft/world/gen/surfacebuilder/VanillaSur
 	FIELD field_35338 BLACKSTONE Lnet/minecraft/class_6686$class_6708;
 	FIELD field_35339 WARPED_WART_BLOCK Lnet/minecraft/class_6686$class_6708;
 	METHOD method_39134 createOverworldSurfaceRule ()Lnet/minecraft/class_6686$class_6708;
+		COMMENT Creates the surface rule to be used in the Overworld.
 	METHOD method_39135 surfaceNoiseThreshold (D)Lnet/minecraft/class_6686$class_6693;
 		ARG 0 min
 	METHOD method_39136 block (Lnet/minecraft/class_2248;)Lnet/minecraft/class_6686$class_6708;
@@ -39,4 +40,6 @@ CLASS net/minecraft/class_6725 net/minecraft/world/gen/surfacebuilder/VanillaSur
 		ARG 2 minThreshold
 		ARG 4 maxThreshold
 	METHOD method_39138 createNetherSurfaceRule ()Lnet/minecraft/class_6686$class_6708;
-	METHOD method_39139 getEndStoneRule ()Lnet/minecraft/class_6686$class_6708;
+		COMMENT Creates the surface rule to be used in the Nether.
+	METHOD method_39139 createEndRule ()Lnet/minecraft/class_6686$class_6708;
+		COMMENT Creates the surface rule to be used in The End.
