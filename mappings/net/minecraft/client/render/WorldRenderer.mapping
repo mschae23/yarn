@@ -36,6 +36,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_53900 TRANSPARENCY Lnet/minecraft/class_2960;
 	FIELD field_53901 ENTITY_OUTLINE Lnet/minecraft/class_2960;
 	FIELD field_54160 prevTranslucencySortCameraPos Lnet/minecraft/class_2338;
+	FIELD field_54161 chunkIndex I
 	FIELD field_54164 nearbyChunks Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_898;Lnet/minecraft/class_824;Lnet/minecraft/class_4599;)V
 		ARG 1 client
@@ -211,7 +212,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 5 projectionMatrix
 		ARG 6 fog
 		ARG 7 renderBlockOutline
-		ARG 8 hasEntitiesToRender
+		ARG 8 renderEntityOutlines
 		ARG 9 renderTickCounter
 		ARG 10 profiler
 	METHOD method_62203 renderWeather (Lnet/minecraft/class_9909;Lnet/minecraft/class_243;FLnet/minecraft/class_9958;)V
@@ -263,6 +264,12 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_62908 onChunkUnload (J)V
 		ARG 1 sectionPos
 	METHOD method_64059 clear ()V
+	METHOD method_64060 scheduleChunkTranslucencySort (Lnet/minecraft/class_846$class_851;Lnet/minecraft/class_846$class_10196;Lnet/minecraft/class_243;ZZ)V
+		ARG 1 chunk
+		ARG 2 relativePos
+		ARG 3 cameraPos
+		ARG 4 needsUpdate
+		ARG 5 ingoreCameraAlignment
 	METHOD method_8563 addParticle (Lnet/minecraft/class_2394;ZZDDDDDD)V
 		ARG 1 parameters
 		ARG 2 force
