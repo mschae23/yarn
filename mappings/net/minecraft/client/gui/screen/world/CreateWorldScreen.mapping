@@ -227,8 +227,6 @@ CLASS net/minecraft/class_525 net/minecraft/client/gui/screen/world/CreateWorldS
 			ARG 2 worldType
 		METHOD method_48673 (Lnet/minecraft/class_5676;Lnet/minecraft/class_8100;)V
 			ARG 2 creator
-		METHOD method_48674 (Lnet/minecraft/class_7845$class_7939;Lnet/minecraft/class_8021;)V
-			ARG 1 widget
 		METHOD method_48675 (Lnet/minecraft/class_8096;Lnet/minecraft/class_8100;)V
 			ARG 1 creator
 		METHOD method_48676 (Lnet/minecraft/class_8100;)V

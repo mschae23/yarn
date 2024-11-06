@@ -24,8 +24,6 @@ CLASS net/minecraft/class_2405 net/minecraft/data/DataProvider
 		ARG 1 codec
 		ARG 2 value
 		ARG 3 path
-	METHOD method_64109 (Lnet/minecraft/class_7403;Lcom/mojang/serialization/Codec;Lnet/minecraft/class_7784$class_7489;Ljava/util/Map$Entry;)Ljava/util/concurrent/CompletableFuture;
-		ARG 3 entry
 	METHOD method_64110 writeAllToPath (Lnet/minecraft/class_7403;Lcom/mojang/serialization/Codec;Lnet/minecraft/class_7784$class_7489;Ljava/util/Map;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 writer
 		ARG 1 codec

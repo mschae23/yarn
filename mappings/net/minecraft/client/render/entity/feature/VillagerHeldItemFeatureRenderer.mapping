@@ -1,8 +1,5 @@
 CLASS net/minecraft/class_4004 net/minecraft/client/render/entity/feature/VillagerHeldItemFeatureRenderer
-	FIELD field_38896 itemRenderer Lnet/minecraft/class_918;
-	METHOD <init> (Lnet/minecraft/class_3883;Lnet/minecraft/class_918;)V
+	METHOD <init> (Lnet/minecraft/class_3883;)V
 		ARG 1 context
-		ARG 2 itemRenderer
-	METHOD method_65251 applyTransforms (Lnet/minecraft/class_10042;Lnet/minecraft/class_4587;)V
-		ARG 1 state
+	METHOD method_65251 applyTransforms (Lnet/minecraft/class_10427;Lnet/minecraft/class_4587;)V
 		ARG 2 matrices

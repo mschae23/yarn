@@ -18,10 +18,6 @@ CLASS net/minecraft/class_2480 net/minecraft/block/ShulkerBoxBlock
 		ARG 1 lootConsumer
 	METHOD method_10525 get (Lnet/minecraft/class_1767;)Lnet/minecraft/class_2248;
 		ARG 0 dyeColor
-	METHOD method_10526 getColor (Lnet/minecraft/class_2248;)Lnet/minecraft/class_1767;
-		ARG 0 block
-	METHOD method_10527 getColor (Lnet/minecraft/class_1792;)Lnet/minecraft/class_1767;
-		ARG 0 item
 	METHOD method_10528 getColor ()Lnet/minecraft/class_1767;
 	METHOD method_10529 getItemStack (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1799;
 		ARG 0 color
@@ -30,8 +26,6 @@ CLASS net/minecraft/class_2480 net/minecraft/block/ShulkerBoxBlock
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 entity
-	METHOD method_38234 (Lnet/minecraft/class_1799;Lnet/minecraft/class_4538;Lnet/minecraft/class_2627;)V
-		ARG 2 blockEntity
 	METHOD method_47378 (Ljava/util/EnumMap;)V
 		ARG 0 map
 	METHOD method_54040 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

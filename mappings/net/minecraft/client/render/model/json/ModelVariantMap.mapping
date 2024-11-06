@@ -26,7 +26,7 @@ CLASS net/minecraft/class_790 net/minecraft/client/render/model/json/ModelVarian
 	METHOD method_62327 parse (Lnet/minecraft/class_2689;Ljava/lang/String;)Ljava/util/Map;
 		ARG 1 stateManager
 		ARG 2 path
-	METHOD method_62328 (Lnet/minecraft/class_1100;Ljava/util/Map$Entry;)Z
+	METHOD method_62328 (Lnet/minecraft/class_9979;Ljava/util/Map$Entry;)Z
 		ARG 1 entry
 	METHOD method_62329 (Ljava/util/List;Lnet/minecraft/class_2689;Ljava/util/Map;Lnet/minecraft/class_816;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_807;)V
 		ARG 6 key

@@ -11,7 +11,6 @@ CLASS net/minecraft/class_4946 net/minecraft/data/client/TexturedModel
 	FIELD field_23044 CARPET Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23045 TEMPLATE_GLAZED_TERRACOTTA Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23046 CORAL_FAN Lnet/minecraft/class_4946$class_4947;
-	FIELD field_23047 PARTICLE Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23048 TEMPLATE_ANVIL Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23049 LEAVES Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23050 TEMPLATE_LANTERN Lnet/minecraft/class_4946$class_4947;

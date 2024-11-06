@@ -6,6 +6,4 @@ CLASS net/minecraft/class_834 net/minecraft/client/render/block/entity/ShulkerBo
 		FIELD field_53169 lid Lnet/minecraft/class_630;
 		METHOD <init> (Lnet/minecraft/class_630;)V
 			ARG 1 root
-		METHOD method_62341 animateLid (Lnet/minecraft/class_2627;F)V
-			ARG 1 blockEntity
-			ARG 2 delta
+		METHOD method_62341 animateLid (F)V

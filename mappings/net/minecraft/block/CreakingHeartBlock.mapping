@@ -16,7 +16,4 @@ CLASS net/minecraft/class_10319 net/minecraft/block/CreakingHeartBlock
 		ARG 2 pos
 	METHOD method_65147 isNightAndNatural (Lnet/minecraft/class_1937;)Z
 		ARG 0 world
-	METHOD method_65148 dropExperienceOnBreak (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
-		ARG 1 state
-		ARG 2 world
-		ARG 3 pos
+	METHOD method_65148 dropExperienceOnBreak (Lnet/minecraft/class_1657;Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V

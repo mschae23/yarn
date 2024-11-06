@@ -1,9 +1,6 @@
 CLASS net/minecraft/class_1747 net/minecraft/item/BlockItem
 	COMMENT Represents an item corresponding to a block. Using this item places a
 	COMMENT block in the world.
-	FIELD field_55029 OP_BLOCK_WARNING_LINE_1 Lnet/minecraft/class_2561;
-	FIELD field_55030 OP_BLOCK_WARNING_LINE_2 Lnet/minecraft/class_2561;
-	FIELD field_55031 OP_BLOCK_WARNING_LINE_3 Lnet/minecraft/class_2561;
 	FIELD field_7901 block Lnet/minecraft/class_2248;
 	METHOD <init> (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)V
 		ARG 1 block

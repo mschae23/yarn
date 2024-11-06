@@ -24,8 +24,7 @@ CLASS net/minecraft/class_10192 net/minecraft/component/type/EquippableComponent
 		METHOD <init> (Lnet/minecraft/class_1304;)V
 			ARG 1 slot
 		METHOD method_64203 build ()Lnet/minecraft/class_10192;
-		METHOD method_64204 model (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10192$class_10217;
-			ARG 1 model
+		METHOD method_64204 model (Lnet/minecraft/class_5321;)Lnet/minecraft/class_10192$class_10217;
 		METHOD method_64205 equipSound (Lnet/minecraft/class_6880;)Lnet/minecraft/class_10192$class_10217;
 			ARG 1 equipSound
 		METHOD method_64206 allowedEntities (Lnet/minecraft/class_6885;)Lnet/minecraft/class_10192$class_10217;

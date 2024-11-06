@@ -31,8 +31,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_51914 DECORATED_POT_BASE Lnet/minecraft/class_4730;
 	FIELD field_51915 DECORATED_POT_SIDE Lnet/minecraft/class_4730;
 	METHOD method_24059 getBannerPatterns ()Lnet/minecraft/class_1921;
-	METHOD method_24061 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4730;
-		ARG 0 color
 	METHOD method_24062 getChestTextureId (Lnet/minecraft/class_2586;Lnet/minecraft/class_2745;Z)Lnet/minecraft/class_4730;
 		ARG 0 blockEntity
 		ARG 1 type
@@ -47,8 +45,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	METHOD method_24065 createChestTextureId (Ljava/lang/String;)Lnet/minecraft/class_4730;
 		ARG 0 variant
 	METHOD method_24067 getShieldPatterns ()Lnet/minecraft/class_1921;
-	METHOD method_24068 (Ljava/lang/String;)Lnet/minecraft/class_4730;
-		ARG 0 colorName
 	METHOD method_24069 getBeds ()Lnet/minecraft/class_1921;
 	METHOD method_24070 getShulkerBoxes ()Lnet/minecraft/class_1921;
 	METHOD method_24071 getSign ()Lnet/minecraft/class_1921;

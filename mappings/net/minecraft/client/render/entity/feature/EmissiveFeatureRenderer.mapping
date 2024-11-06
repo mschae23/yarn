@@ -3,7 +3,7 @@ CLASS net/minecraft/class_7288 net/minecraft/client/render/entity/feature/Emissi
 	FIELD field_38356 animationAlphaAdjuster Lnet/minecraft/class_7288$class_7289;
 	FIELD field_38464 modelPartVisibility Lnet/minecraft/class_7288$class_7311;
 	FIELD field_54861 renderLayerFunction Ljava/util/function/Function;
-	METHOD <init> (Lnet/minecraft/class_3883;Lnet/minecraft/class_2960;Lnet/minecraft/class_7288$class_7289;Lnet/minecraft/class_7288$class_7311;Ljava/util/function/Function;)V
+	METHOD <init> (Lnet/minecraft/class_3883;Lnet/minecraft/class_2960;Lnet/minecraft/class_7288$class_7289;Lnet/minecraft/class_7288$class_7311;Ljava/util/function/Function;Z)V
 		ARG 1 context
 		ARG 2 texture
 		ARG 3 animationAlphaAdjuster

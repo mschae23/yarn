@@ -20,9 +20,7 @@ CLASS net/minecraft/class_801 net/minecraft/client/render/model/json/ItemModelGe
 		ARG 6 height
 	METHOD method_3478 getFrames (Lnet/minecraft/class_7764;)Ljava/util/List;
 		ARG 1 sprite
-	METHOD method_3479 create (Ljava/util/function/Function;Lnet/minecraft/class_793;)Lnet/minecraft/class_793;
-		ARG 1 textureGetter
-		ARG 2 blockModel
+	METHOD method_3479 create (Lnet/minecraft/class_10419;Lnet/minecraft/class_10527;Lnet/minecraft/class_3665;ZZLnet/minecraft/class_809;)Lnet/minecraft/class_1087;
 	METHOD method_3480 addLayerElements (ILjava/lang/String;Lnet/minecraft/class_7764;)Ljava/util/List;
 		ARG 1 layer
 		ARG 2 key

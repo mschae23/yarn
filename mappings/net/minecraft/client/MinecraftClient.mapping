@@ -110,7 +110,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1757 resourcePackDir Ljava/nio/file/Path;
 	FIELD field_1758 tutorialManager Lnet/minecraft/class_1156;
 	FIELD field_1759 integratedServerRunning Z
-	FIELD field_1760 itemColors Lnet/minecraft/class_325;
 	FIELD field_1761 interactionManager Lnet/minecraft/class_636;
 	FIELD field_1762 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1763 bakedModelManager Lnet/minecraft/class_1092;
@@ -143,7 +142,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_26842 socialInteractionsManager Lnet/minecraft/class_5520;
 	FIELD field_26843 socialInteractionsToast Lnet/minecraft/class_372;
 	FIELD field_26902 userApiService Lcom/mojang/authlib/minecraft/UserApiService;
-	FIELD field_27387 entityModelLoader Lnet/minecraft/class_5599;
 	FIELD field_27388 blockEntityRenderDispatcher Lnet/minecraft/class_824;
 	FIELD field_29569 recorder Lnet/minecraft/class_5962;
 	FIELD field_32144 wireFrame Z
@@ -186,7 +184,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_52752 mapTextureManager Lnet/minecraft/class_10093;
 	FIELD field_52753 inactivityFpsLimiter Lnet/minecraft/class_9919;
 	FIELD field_53831 shaderLoader Lnet/minecraft/class_10151;
-	FIELD field_54150 equipmentModelLoader Lnet/minecraft/class_10201;
 	FIELD field_54267 tracyFrameCapturer Lnet/minecraft/class_10219;
 	METHOD <init> (Lnet/minecraft/class_542;)V
 		ARG 1 args
@@ -531,7 +528,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_62887 getShaderLoader ()Lnet/minecraft/class_10151;
 	METHOD method_63507 onShaderResourceReloadFailure (Ljava/lang/Exception;)V
 		ARG 1 exception
-	METHOD method_64036 getEquipmentModelLoader ()Lnet/minecraft/class_10201;
 	CLASS 1
 		FIELD field_52756 closed Z
 	CLASS class_5859 ChatRestriction

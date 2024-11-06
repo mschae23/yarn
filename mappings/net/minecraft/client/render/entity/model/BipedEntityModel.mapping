@@ -60,9 +60,6 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 	METHOD method_54131 positionBlockingArm (Lnet/minecraft/class_630;Z)V
 		ARG 1 arm
 		ARG 2 rightArm
-	METHOD method_62081 getArmPose (Lnet/minecraft/class_10034;Lnet/minecraft/class_1306;)Lnet/minecraft/class_572$class_573;
-		ARG 1 state
-		ARG 2 arm
 	METHOD method_64254 copyTransforms (Lnet/minecraft/class_572;)V
 		ARG 1 model
 	CLASS class_573 ArmPose

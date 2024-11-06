@@ -42,10 +42,6 @@ CLASS net/minecraft/class_3763 net/minecraft/entity/raid/RaiderEntity
 		FIELD field_18881 closeRaiderPredicate Lnet/minecraft/class_4051;
 		FIELD field_18883 raider Lnet/minecraft/class_3763;
 		FIELD field_18884 squaredDistance F
-		METHOD <init> (Lnet/minecraft/class_3763;Lnet/minecraft/class_1543;F)V
-			ARG 1 raider
-			ARG 2 illager
-			ARG 3 distance
 	CLASS class_4260 CelebrateGoal
 		FIELD field_19034 raider Lnet/minecraft/class_3763;
 		METHOD <init> (Lnet/minecraft/class_3763;Lnet/minecraft/class_3763;)V

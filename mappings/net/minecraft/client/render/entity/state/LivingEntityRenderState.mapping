@@ -19,14 +19,6 @@ CLASS net/minecraft/class_10042 net/minecraft/client/render/entity/state/LivingE
 	FIELD field_53463 sleepingDirection Lnet/minecraft/class_2350;
 	FIELD field_53464 customName Lnet/minecraft/class_2561;
 	FIELD field_53465 pose Lnet/minecraft/class_4050;
-	FIELD field_53466 equippedHeadItemModel Lnet/minecraft/class_1087;
-	FIELD field_53467 equippedHeadStack Lnet/minecraft/class_1799;
-	FIELD field_53468 mainArm Lnet/minecraft/class_1306;
-	FIELD field_53469 rightHandItemModel Lnet/minecraft/class_1087;
-	FIELD field_53470 rightHandStack Lnet/minecraft/class_1799;
-	FIELD field_53471 leftHandItemModel Lnet/minecraft/class_1087;
-	FIELD field_53472 leftHandStack Lnet/minecraft/class_1799;
+	FIELD field_53467 equippedHeadStack Lnet/minecraft/class_10444;
 	METHOD method_62613 isInPose (Lnet/minecraft/class_4050;)Z
 		ARG 1 pose
-	METHOD method_62614 getMainHandStack ()Lnet/minecraft/class_1799;
-	METHOD method_62615 getMainHandItemModel ()Lnet/minecraft/class_1087;

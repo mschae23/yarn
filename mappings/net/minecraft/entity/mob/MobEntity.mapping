@@ -153,8 +153,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	METHOD method_56677 isWearingBodyArmor ()Z
 	METHOD method_56678 equipBodyArmor (Lnet/minecraft/class_1799;)V
 		ARG 1 stack
-	METHOD method_57296 hasComponentsOtherThanDamage (Lnet/minecraft/class_1799;)Z
-		ARG 0 stack
 	METHOD method_58634 setEquipmentFromTable (Lnet/minecraft/class_9652;)V
 		ARG 1 equipmentTable
 	METHOD method_58635 createEquipmentLootParameters (Lnet/minecraft/class_3218;)Lnet/minecraft/class_8567;
@@ -195,8 +193,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	METHOD method_5952 setCanPickUpLoot (Z)V
 		ARG 1 canPickUpLoot
 	METHOD method_5955 prefersNewEquipment (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;Lnet/minecraft/class_1304;)Z
-		ARG 1 newStack
-		ARG 2 oldStack
 		ARG 3 slot
 	METHOD method_5957 canSpawn (Lnet/minecraft/class_4538;)Z
 		ARG 1 world
