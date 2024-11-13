@@ -4,7 +4,7 @@ CLASS net/minecraft/class_2350 net/minecraft/util/math/Direction
 	COMMENT <p>In Minecraft, the X axis determines the east-west direction, the Y axis determines
 	COMMENT the up-down direction, and the Z axis determines the south-north direction (note
 	COMMENT that positive-Z direction is south, not north).
-	FIELD field_11030 idHorizontal I
+	FIELD field_11030 horizontalQuarterTurns I
 	FIELD field_11031 idOpposite I
 	FIELD field_11032 id I
 	FIELD field_11038 VALUES [Lnet/minecraft/class_2350;
@@ -22,13 +22,13 @@ CLASS net/minecraft/class_2350 net/minecraft/util/math/Direction
 	METHOD <init> (Ljava/lang/String;IIIILjava/lang/String;Lnet/minecraft/class_2350$class_2352;Lnet/minecraft/class_2350$class_2351;Lnet/minecraft/class_2382;)V
 		ARG 3 id
 		ARG 4 idOpposite
-		ARG 5 idHorizontal
+		ARG 5 horizontalQuarterTurns
 		ARG 6 name
 		ARG 7 direction
 		ARG 8 axis
 		ARG 9 vector
-	METHOD method_10139 fromHorizontal (I)Lnet/minecraft/class_2350;
-		ARG 0 value
+	METHOD method_10139 fromHorizontalQuarterTurns (I)Lnet/minecraft/class_2350;
+		ARG 0 quarterTurns
 	METHOD method_10140 (Lnet/minecraft/class_2350;)I
 		ARG 0 direction
 	METHOD method_10141 (Lnet/minecraft/class_2350;)I
@@ -39,7 +39,7 @@ CLASS net/minecraft/class_2350 net/minecraft/util/math/Direction
 		ARG 4 z
 	METHOD method_10143 byId (I)Lnet/minecraft/class_2350;
 		ARG 0 id
-	METHOD method_10144 asRotation ()F
+	METHOD method_10144 getPositiveHorizontalDegrees ()F
 	METHOD method_10145 listClosest (Lnet/minecraft/class_2350;Lnet/minecraft/class_2350;Lnet/minecraft/class_2350;)[Lnet/minecraft/class_2350;
 		COMMENT Helper function that returns the 3 directions given, followed by the 3 opposite given in opposite order.
 		ARG 0 first
@@ -51,8 +51,8 @@ CLASS net/minecraft/class_2350 net/minecraft/util/math/Direction
 		ARG 1 y
 		ARG 2 z
 	METHOD method_10148 getOffsetX ()I
-	METHOD method_10150 fromRotation (D)Lnet/minecraft/class_2350;
-		ARG 0 rotation
+	METHOD method_10150 fromHorizontalDegrees (D)Lnet/minecraft/class_2350;
+		ARG 0 angle
 	METHOD method_10151 getName ()Ljava/lang/String;
 	METHOD method_10153 getOpposite ()Lnet/minecraft/class_2350;
 	METHOD method_10155 (Lnet/minecraft/class_2350;)Z
@@ -63,7 +63,7 @@ CLASS net/minecraft/class_2350 net/minecraft/util/math/Direction
 	METHOD method_10159 getEntityFacingOrder (Lnet/minecraft/class_1297;)[Lnet/minecraft/class_2350;
 		ARG 0 entity
 	METHOD method_10160 rotateYCounterclockwise ()Lnet/minecraft/class_2350;
-	METHOD method_10161 getHorizontal ()I
+	METHOD method_10161 getHorizontalQuarterTurns ()I
 	METHOD method_10162 random (Lnet/minecraft/class_5819;)Lnet/minecraft/class_2350;
 		ARG 0 random
 	METHOD method_10164 getOffsetY ()I
@@ -115,7 +115,7 @@ CLASS net/minecraft/class_2350 net/minecraft/util/math/Direction
 		ARG 1 y
 		ARG 2 z
 		ARG 3 fallback
-	METHOD method_62673 getHorizontalDegrees (Lnet/minecraft/class_2350;)F
+	METHOD method_62673 getHorizontalDegreesOrThrow (Lnet/minecraft/class_2350;)F
 		ARG 0 direction
 	METHOD method_62674 fromVector (Lnet/minecraft/class_2382;Lnet/minecraft/class_2350;)Lnet/minecraft/class_2350;
 		ARG 0 vec
