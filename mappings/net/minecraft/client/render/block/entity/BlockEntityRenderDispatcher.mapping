@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_824 net/minecraft/client/render/block/entity/BlockEntityRenderDispatcher
-	FIELD field_27746 entityModelLoader Ljava/util/function/Supplier;
+	FIELD field_27746 entityModelsGetter Ljava/util/function/Supplier;
 	FIELD field_27747 blockRenderManager Lnet/minecraft/class_776;
 	FIELD field_38880 itemRenderer Lnet/minecraft/class_918;
 	FIELD field_38881 entityRenderDispatcher Lnet/minecraft/class_898;
@@ -8,8 +8,14 @@ CLASS net/minecraft/class_824 net/minecraft/client/render/block/entity/BlockEnti
 	FIELD field_4345 renderers Ljava/util/Map;
 	FIELD field_4348 world Lnet/minecraft/class_1937;
 	FIELD field_4350 crosshairTarget Lnet/minecraft/class_239;
+	FIELD field_55283 itemModelManager Lnet/minecraft/class_10442;
 	METHOD <init> (Lnet/minecraft/class_327;Ljava/util/function/Supplier;Lnet/minecraft/class_776;Lnet/minecraft/class_10442;Lnet/minecraft/class_918;Lnet/minecraft/class_898;)V
 		ARG 1 textRenderer
+		ARG 2 entityModelsGetter
+		ARG 3 blockRenderManager
+		ARG 4 itemModelManager
+		ARG 5 itemRenderer
+		ARG 6 entityRenderDispatcher
 	METHOD method_23079 render (Lnet/minecraft/class_827;Lnet/minecraft/class_2586;FLnet/minecraft/class_4587;Lnet/minecraft/class_4597;)V
 		ARG 0 renderer
 		ARG 1 blockEntity
