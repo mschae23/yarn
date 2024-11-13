@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_10323 net/minecraft/block/entity/CreakingHeartBlockEntity
-	FIELD field_54786 creakingPuppet Lnet/minecraft/class_10281;
 	FIELD field_54787 creakingUpdateTimer I
 	FIELD field_54788 trailParticlesSpawnTimer I
 	FIELD field_54789 lastCreakingPuppetPos Lnet/minecraft/class_243;
@@ -11,7 +10,7 @@ CLASS net/minecraft/class_10323 net/minecraft/block/entity/CreakingHeartBlockEnt
 		ARG 1 world
 		ARG 2 count
 		ARG 3 towardsPuppet
-	METHOD method_64801 spawnCreakingPuppet (Lnet/minecraft/class_3218;Lnet/minecraft/class_10323;)Lnet/minecraft/class_10281;
+	METHOD method_64801 spawnCreakingPuppet (Lnet/minecraft/class_3218;Lnet/minecraft/class_10323;)Lnet/minecraft/class_10275;
 		ARG 0 world
 		ARG 1 blockEntity
 	METHOD method_64802 killPuppet (Lnet/minecraft/class_1282;)V

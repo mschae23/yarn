@@ -12,8 +12,7 @@ CLASS net/minecraft/class_4482 net/minecraft/block/entity/BeehiveBlockEntity
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
-	METHOD method_21848 tryEnterHive (Lnet/minecraft/class_1297;)V
-		ARG 1 entity
+	METHOD method_21848 tryEnterHive (Lnet/minecraft/class_4466;)V
 	METHOD method_21850 angerBees (Lnet/minecraft/class_1657;Lnet/minecraft/class_2680;Lnet/minecraft/class_4482$class_4484;)V
 		ARG 1 player
 		ARG 2 state

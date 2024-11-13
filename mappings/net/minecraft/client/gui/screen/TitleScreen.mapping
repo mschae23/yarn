@@ -15,9 +15,6 @@ CLASS net/minecraft/class_442 net/minecraft/client/gui/screen/TitleScreen
 	METHOD <init> (ZLnet/minecraft/class_8020;)V
 		ARG 1 doBackgroundFade
 		ARG 2 logoDrawer
-	METHOD method_18105 loadTexturesAsync (Lnet/minecraft/class_1060;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 textureManager
-		ARG 1 executor
 	METHOD method_19857 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_19858 (ZLnet/minecraft/class_4185;)V

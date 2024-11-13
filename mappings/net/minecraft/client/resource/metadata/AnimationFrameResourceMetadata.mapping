@@ -1,12 +1,11 @@
 CLASS net/minecraft/class_1080 net/minecraft/client/resource/metadata/AnimationFrameResourceMetadata
-	FIELD field_32973 UNDEFINED_TIME I
-	FIELD field_5340 time I
-	FIELD field_5341 index I
+	FIELD comp_3451 index I
+	FIELD comp_3452 time Ljava/util/Optional;
 	METHOD <init> (I)V
 		ARG 1 index
-	METHOD <init> (II)V
+	METHOD <init> (ILjava/util/Optional;)V
 		ARG 1 index
-		ARG 2 time
-	METHOD method_4690 getIndex ()I
+	METHOD comp_3451 index ()I
+	METHOD comp_3452 time ()Ljava/util/Optional;
 	METHOD method_4691 getTime (I)I
 		ARG 1 defaultTime
