@@ -23,7 +23,7 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 3 height
 		ARG 4 useStb
 		ARG 5 pointer
-	METHOD method_22619 upload (IIIIIIIZZZZ)V
+	METHOD method_22619 upload (IIIIIIIZ)V
 		ARG 1 level
 		ARG 2 offsetX
 		ARG 3 offsetY
@@ -32,9 +32,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 6 width
 		ARG 7 height
 		ARG 8 blur
-		ARG 9 clamp
-		ARG 10 mipmap
-		ARG 11 close
 	METHOD method_24032 write (Ljava/nio/channels/WritableByteChannel;)Z
 		ARG 1 channel
 	METHOD method_35620 readDepthComponent (F)V
@@ -81,9 +78,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 3 color
 			COMMENT the color, with red at smallest and alpha at biggest bits
 	METHOD method_4307 getWidth ()I
-	METHOD method_4308 setTextureFilter (ZZ)V
-		ARG 0 blur
-		ARG 1 mipmap
 	METHOD method_4309 read (Ljava/io/InputStream;)Lnet/minecraft/class_1011;
 		ARG 0 stream
 	METHOD method_4310 read (Lnet/minecraft/class_1011$class_1012;Ljava/io/InputStream;)Lnet/minecraft/class_1011;
@@ -92,16 +86,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 	METHOD method_4311 getOpacity (II)B
 		ARG 1 x
 		ARG 2 y
-	METHOD method_4312 upload (IIIIIIIZZ)V
-		ARG 1 level
-		ARG 2 offsetX
-		ARG 3 offsetY
-		ARG 4 unpackSkipPixels
-		ARG 5 unpackSkipRows
-		ARG 6 width
-		ARG 7 height
-		ARG 8 mipmap
-		ARG 9 close
 	METHOD method_4314 writeTo (Ljava/nio/file/Path;)V
 		ARG 1 path
 	METHOD method_4315 getColor (II)I
@@ -122,7 +106,7 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 	METHOD method_4318 getFormat ()Lnet/minecraft/class_1011$class_1012;
 	METHOD method_4319 mirrorVertically ()V
 	METHOD method_4320 checkAllocated ()V
-	METHOD method_4321 uploadInternal (IIIIIIIZZZZ)V
+	METHOD method_4321 uploadInternal (IIIIIIIZ)V
 		ARG 1 level
 		ARG 2 offsetX
 		ARG 3 offsetY
@@ -131,9 +115,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 6 width
 		ARG 7 height
 		ARG 8 blur
-		ARG 9 clamp
-		ARG 10 mipmap
-		ARG 11 close
 	METHOD method_4322 makePixelArray ()[I
 	METHOD method_4323 getHeight ()I
 	METHOD method_4324 read (Ljava/nio/ByteBuffer;)Lnet/minecraft/class_1011;

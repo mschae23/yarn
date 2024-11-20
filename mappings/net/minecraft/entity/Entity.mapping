@@ -1926,13 +1926,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_5832 applyRotation (Lnet/minecraft/class_2470;)F
 		COMMENT Applies {@code rotation} to the entity's yaw.
 		ARG 1 rotation
-	METHOD method_5833 entityDataRequiresOperator ()Z
-		COMMENT {@return whether {@link EntityType#loadFromEntityNbt} should reject entity
-		COMMENT NBTs unless called by an operator}
-		COMMENT
-		COMMENT <p>This is {@code false} by default, and should be overridden if the entity
-		COMMENT provides functionality that is usually restricted to operators (such as {@link
-		COMMENT net.minecraft.entity.vehicle.CommandBlockMinecartEntity}).
 	METHOD method_5834 setGlowing (Z)V
 		COMMENT Sets whether the entity is glowing.
 		COMMENT

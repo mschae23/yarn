@@ -33,7 +33,7 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 	FIELD field_4051 prevEquipProgressOffHand F
 	FIELD field_4052 equipProgressOffHand F
 	FIELD field_4053 prevEquipProgressMainHand F
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_898;Lnet/minecraft/class_918;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_898;Lnet/minecraft/class_918;Lnet/minecraft/class_10442;)V
 		ARG 1 client
 		ARG 2 entityRenderDispatcher
 		ARG 3 itemRenderer

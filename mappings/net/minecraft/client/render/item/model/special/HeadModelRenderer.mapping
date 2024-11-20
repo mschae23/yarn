@@ -2,7 +2,7 @@ CLASS net/minecraft/class_10513 net/minecraft/client/render/item/model/special/H
 	FIELD field_55449 kind Lnet/minecraft/class_2484$class_2485;
 	FIELD field_55450 model Lnet/minecraft/class_5598;
 	FIELD field_55525 texture Lnet/minecraft/class_2960;
-	METHOD <init> (Lnet/minecraft/class_2484$class_2485;Lnet/minecraft/class_5598;Lnet/minecraft/class_2960;)V
+	METHOD <init> (Lnet/minecraft/class_2484$class_2485;Lnet/minecraft/class_5598;Lnet/minecraft/class_2960;F)V
 		ARG 1 kind
 		ARG 2 model
 		ARG 3 texture

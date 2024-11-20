@@ -3,9 +3,7 @@ CLASS net/minecraft/class_9817 net/minecraft/entity/Leashable
 	FIELD field_52314 MAX_LEASH_LENGTH D
 	FIELD field_52315 SHORT_LEASH_LENGTH D
 	METHOD method_5931 canBeLeashed ()Z
-	METHOD method_5932 detachLeash (ZZ)V
-		ARG 1 sendPacket
-		ARG 2 dropItem
+	METHOD method_5932 detachLeash ()V
 	METHOD method_60952 getLeashHolder ()Lnet/minecraft/class_1297;
 	METHOD method_60953 isLeashed ()Z
 	METHOD method_60954 mightBeLeashed ()Z
@@ -47,12 +45,10 @@ CLASS net/minecraft/class_9817 net/minecraft/entity/Leashable
 		ARG 1 entity
 	METHOD method_60966 getLeashHolder (Lnet/minecraft/class_1297;)Lnet/minecraft/class_1297;
 		ARG 0 entity
-	METHOD method_60967 readLeashDataFromNbt (Lnet/minecraft/class_2487;)Lnet/minecraft/class_9817$class_9818;
-		ARG 1 nbt
+	METHOD method_60967 readLeashDataFromNbt (Lnet/minecraft/class_2487;)V
 	METHOD method_60968 setUnresolvedLeashHolderId (I)V
 		ARG 1 unresolvedLeashHolderId
 	METHOD method_60969 canLeashAttachTo ()Z
-	METHOD method_60970 detachLeash ()V
 	METHOD method_61161 applyLeashElasticity (Lnet/minecraft/class_1297;Lnet/minecraft/class_1297;F)V
 		ARG 0 entity
 		ARG 1 leashHolder
