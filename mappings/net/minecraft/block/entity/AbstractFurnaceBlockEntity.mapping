@@ -1,13 +1,10 @@
 CLASS net/minecraft/class_2609 net/minecraft/block/entity/AbstractFurnaceBlockEntity
-	FIELD field_11980 fuelTime I
-	FIELD field_11981 burnTime I
 	FIELD field_11982 BOTTOM_SLOTS [I
 	FIELD field_11983 SIDE_SLOTS [I
 	FIELD field_11984 inventory Lnet/minecraft/class_2371;
 	FIELD field_11986 recipesUsed Lit/unimi/dsi/fastutil/objects/Reference2IntOpenHashMap;
 	FIELD field_11987 TOP_SLOTS [I
 	FIELD field_11988 cookTimeTotal I
-	FIELD field_11989 cookTime I
 	FIELD field_17374 propertyDelegate Lnet/minecraft/class_3913;
 	FIELD field_31286 INPUT_SLOT_INDEX I
 	FIELD field_31287 FUEL_SLOT_INDEX I
