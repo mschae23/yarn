@@ -32,9 +32,6 @@ CLASS net/minecraft/class_26 net/minecraft/world/PersistentStateManager
 		ARG 1 type
 		ARG 2 id
 	METHOD method_61873 startSaving ()Ljava/util/concurrent/CompletableFuture;
-	METHOD method_61875 save (Ljava/nio/file/Path;Lnet/minecraft/class_2487;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 path
-		ARG 1 nbt
 	METHOD method_61876 (Ljava/util/Map$Entry;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 entry
 	METHOD method_61877 (Ljava/util/Map;Ljava/lang/Object;)Ljava/util/concurrent/CompletionStage;
