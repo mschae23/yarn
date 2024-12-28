@@ -11,6 +11,7 @@ CLASS net/minecraft/class_10275 net/minecraft/entity/mob/CreakingEntity
 	FIELD field_55491 nextEyeFlickerTime I
 	FIELD field_55493 playerIntersectionTimer I
 	FIELD field_55545 HOME_POS Lnet/minecraft/class_2940;
+	FIELD field_54575 ATTACK_DAMAGE F
 	METHOD method_64624 tickAttackAnimation ()V
 	METHOD method_64627 createCreakingAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_64628 isUnrooted ()Z
