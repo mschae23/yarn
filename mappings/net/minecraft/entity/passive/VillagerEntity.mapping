@@ -77,7 +77,7 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 		ARG 2 villager
 	METHOD method_20696 decayGossip ()V
 	METHOD method_20697 eatForBreeding ()V
-	METHOD method_20698 lacksFood ()Z
+	METHOD method_20698 canEatFood ()Z
 	METHOD method_20699 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;Lnet/minecraft/class_1309;)V
 		ARG 2 observer
 	METHOD method_20741 hasRecentlySlept (J)Z
@@ -109,5 +109,5 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 		ARG 2 lastSlept
 	METHOD method_63666 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1640;)V
 		ARG 2 witch
-	METHOD method_7234 wantsToStartBreeding ()Z
-	METHOD method_7239 canBreed ()Z
+	METHOD method_7234 canShareFoodForBreeding ()Z
+	METHOD method_7239 needsFoodForBreeding ()Z
