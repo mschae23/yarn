@@ -1085,6 +1085,24 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 0 settings
 	METHOD method_65146 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings
+	METHOD method_66409 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_66410 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_66411 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_66412 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_66413 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_66414 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_66415 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_66416 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_66417 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
 	METHOD method_9492 register (Ljava/lang/String;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 id
 		ARG 1 settings

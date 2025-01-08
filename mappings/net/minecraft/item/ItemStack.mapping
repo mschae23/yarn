@@ -53,6 +53,7 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	FIELD field_51397 VALIDATED_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_51398 VALIDATED_UNCOUNTED_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_55546 OPERATOR_WARNINGS Ljava/util/List;
+	FIELD field_55709 MAP_CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_8030 bobbingAnimationTime I
 	FIELD field_8031 count I
 	FIELD field_8033 LOGGER Lorg/slf4j/Logger;
@@ -201,6 +202,8 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 1 amount
 		ARG 2 entity
 	METHOD method_57351 getBreakSound ()Lnet/minecraft/class_3414;
+	METHOD method_57352 (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 codec
 	METHOD method_57354 applyAttributeModifiers (Lnet/minecraft/class_1304;Ljava/util/function/BiConsumer;)V
 		ARG 1 slot
 		ARG 2 attributeModifierConsumer

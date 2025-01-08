@@ -39,6 +39,8 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 	FIELD field_51365 ARGB Lcom/mojang/serialization/Codec;
 	FIELD field_53754 NON_NEGATIVE_FLOAT Lcom/mojang/serialization/Codec;
 	FIELD field_54067 RGB Lcom/mojang/serialization/Codec;
+	FIELD field_55622 URI Lcom/mojang/serialization/Codec;
+	FIELD field_55623 CHAT_TEXT Lcom/mojang/serialization/Codec;
 	METHOD method_36241 rangedInt (IILjava/util/function/Function;)Lcom/mojang/serialization/Codec;
 		ARG 0 min
 		ARG 1 max
@@ -287,6 +289,8 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 		ARG 1 listCodec
 	METHOD method_65322 (Ljava/util/List;)Ljava/util/List;
 		ARG 0 list
+	METHOD method_66032 (Ljava/lang/String;)Lcom/mojang/serialization/DataResult;
+		ARG 0 s
 	CLASS 1
 		METHOD apply (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;Lcom/mojang/serialization/DataResult;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
