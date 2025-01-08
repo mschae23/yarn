@@ -6,7 +6,6 @@ CLASS net/minecraft/class_1496 net/minecraft/entity/passive/AbstractHorseEntity
 	FIELD field_30422 EATING_GRASS_FLAG I
 	FIELD field_30423 ANGRY_FLAG I
 	FIELD field_30424 EATING_FLAG I
-	FIELD field_42462 ownerUuid Ljava/util/UUID;
 	FIELD field_42641 MIN_MOVEMENT_SPEED_BONUS F
 	FIELD field_42642 MAX_MOVEMENT_SPEED_BONUS F
 	FIELD field_42643 MIN_JUMP_STRENGTH_BONUS F
@@ -92,8 +91,6 @@ CLASS net/minecraft/class_1496 net/minecraft/entity/passive/AbstractHorseEntity
 	METHOD method_6729 getTemper ()I
 	METHOD method_6730 getHorseFlag (I)Z
 		ARG 1 bitmask
-	METHOD method_6732 setOwnerUuid (Ljava/util/UUID;)V
-		ARG 1 ownerUuid
 	METHOD method_6733 playEatingAnimation ()V
 	METHOD method_6734 canBreed ()Z
 	METHOD method_6736 isAngry ()Z

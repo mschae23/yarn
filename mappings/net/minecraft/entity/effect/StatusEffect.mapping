@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_1291 net/minecraft/entity/effect/StatusEffect
 	FIELD field_18270 category Lnet/minecraft/class_4081;
-	FIELD field_47738 fadeTicks I
 	FIELD field_49789 AMBIENT_PARTICLE_ALPHA I
 	FIELD field_49790 particleFactory Ljava/util/function/Function;
 	FIELD field_50114 applySound Ljava/util/Optional;
@@ -40,19 +39,12 @@ CLASS net/minecraft/class_1291 net/minecraft/entity/effect/StatusEffect
 		ARG 4 target
 		ARG 5 amplifier
 		ARG 6 proximity
-	METHOD method_55649 fadeTicks (I)Lnet/minecraft/class_1291;
-		COMMENT Sets the duration of effect fade-in and fade-out.
-		COMMENT
-		COMMENT @return this effect, for chaining
-		COMMENT @see StatusEffectInstance#getFadeFactor
-		ARG 1 fadeTicks
 	METHOD method_55650 forEachAttributeModifier (ILjava/util/function/BiConsumer;)V
 		ARG 1 amplifier
 		ARG 2 consumer
 	METHOD method_55651 (Ljava/util/function/BiConsumer;ILnet/minecraft/class_6880;Lnet/minecraft/class_1291$class_8634;)V
 		ARG 2 attribute
 		ARG 3 attributeModifierCreator
-	METHOD method_55652 getFadeTicks ()I
 	METHOD method_5566 addAttributeModifier (Lnet/minecraft/class_6880;Lnet/minecraft/class_2960;DLnet/minecraft/class_1322$class_1323;)Lnet/minecraft/class_1291;
 		ARG 1 attribute
 		ARG 2 id

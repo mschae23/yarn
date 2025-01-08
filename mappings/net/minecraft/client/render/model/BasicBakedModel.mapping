@@ -40,7 +40,7 @@ CLASS net/minecraft/class_1093 net/minecraft/client/render/model/BasicBakedModel
 		FIELD field_5419 quads Lcom/google/common/collect/ImmutableList$Builder;
 		FIELD field_5420 isSideLit Z
 		FIELD field_5421 usesAo Z
-		FIELD field_5422 faceQuads Ljava/util/EnumMap;
+		FIELD field_5422 faceQuads Ljava/util/Map;
 		FIELD field_5424 particleTexture Lnet/minecraft/class_1058;
 		METHOD <init> (ZZZLnet/minecraft/class_809;)V
 			ARG 1 usesAo

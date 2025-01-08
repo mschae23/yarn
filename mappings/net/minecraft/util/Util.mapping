@@ -406,7 +406,7 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 		ARG 1 o
 	METHOD method_61210 and ()Ljava/util/function/Predicate;
 	METHOD method_61211 or ()Ljava/util/function/Predicate;
-	METHOD method_63541 mapEnum (Ljava/lang/Class;Ljava/util/function/Function;)Ljava/util/EnumMap;
+	METHOD method_63541 mapEnum (Ljava/lang/Class;Ljava/util/function/Function;)Ljava/util/Map;
 		ARG 0 enumClass
 		ARG 1 mapper
 	METHOD method_64122 runInNamedZone (Ljava/lang/Runnable;Ljava/lang/String;)V

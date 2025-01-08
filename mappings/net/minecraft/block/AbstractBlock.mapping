@@ -268,8 +268,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		COMMENT
 		COMMENT @see net.minecraft.resource.featuretoggle.FeatureFlags
 	FIELD field_54005 translationKey Ljava/lang/String;
-	METHOD <init> (Lnet/minecraft/class_4970$class_2251;)V
-		ARG 1 settings
 	METHOD method_17454 createScreenHandlerFactory (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_3908;
 		COMMENT {@return the screen handler factory or {@code null} if screen handler cannot be created}
 		COMMENT
@@ -520,27 +518,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		COMMENT @see AbstractBlockState#getRenderingSeed
 		ARG 1 state
 		ARG 2 pos
-	METHOD method_9536 onStateReplaced (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Z)V
-		COMMENT Called server-side on the old block when the block state is changed. This includes block
-		COMMENT removal. This is used to update neighboring blocks when an active redstone power source
-		COMMENT is removed, or to drop the contents of an inventory. The check {@code
-		COMMENT state.isOf(newState.getBlock())} can be used to see if the block was removed or not.
-		COMMENT
-		COMMENT <p>For most block entities, {@link net.minecraft.util.ItemScatterer#onStateReplaced}
-		COMMENT provides a good implementation of this method. Make sure to call {@code
-		COMMENT super.onStateReplaced(state, world, pos, newState, moved);} <strong>after</strong>
-		COMMENT invoking {@code ItemScatterer} methods.
-		COMMENT
-		COMMENT @see AbstractBlockState#onStateReplaced
-		COMMENT
-		COMMENT @see net.minecraft.util.ItemScatterer#onStateReplaced
-		COMMENT @see net.minecraft.util.ItemScatterer#spawn(World, BlockPos, net.minecraft.inventory.Inventory)
-		COMMENT @see #onBlockAdded
-		ARG 1 state
-		ARG 2 world
-		ARG 3 pos
-		ARG 4 newState
-		ARG 5 moved
 	METHOD method_9542 hasRandomTicks (Lnet/minecraft/class_2680;)Z
 		ARG 1 state
 	METHOD method_9545 getFluidState (Lnet/minecraft/class_2680;)Lnet/minecraft/class_3610;
@@ -1199,11 +1176,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_26196 createScreenHandlerFactory (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_3908;
 			ARG 1 world
 			ARG 2 pos
-		METHOD method_26197 onStateReplaced (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Z)V
-			ARG 1 world
-			ARG 2 pos
-			ARG 3 state
-			ARG 4 moved
 		METHOD method_26198 prepare (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;II)V
 			ARG 1 world
 			ARG 2 pos

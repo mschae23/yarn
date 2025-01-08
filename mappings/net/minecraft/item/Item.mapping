@@ -260,7 +260,7 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 		ARG 0 world
 		ARG 1 player
 		ARG 2 fluidHandling
-	METHOD method_7873 postHit (Lnet/minecraft/class_1799;Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Z
+	METHOD method_7873 postHit (Lnet/minecraft/class_1799;Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)V
 		COMMENT Called on the server when the item is used to hit an entity.
 		COMMENT
 		COMMENT <p>Tools and melee weapons should override this to damage the stack.
@@ -308,17 +308,13 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 		COMMENT @return an action result that specifies if using the item on a block was successful.
 		ARG 1 context
 			COMMENT the usage context
-	METHOD method_7885 canMine (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;)Z
+	METHOD method_7885 canMine (Lnet/minecraft/class_1799;Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1309;)Z
 		COMMENT {@return whether a player can break a block while holding the item}
 		COMMENT
 		COMMENT <p>This is to check whether the player can start breaking the block in the
 		COMMENT first place; this does not check if the item is a correct tool to mine the block.
 		COMMENT Melee weapons should override this to return {@code false}, unless it is also
 		COMMENT intended to be used as a tool.
-		ARG 1 state
-		ARG 2 world
-		ARG 3 pos
-		ARG 4 miner
 	METHOD method_7886 hasGlint (Lnet/minecraft/class_1799;)Z
 		COMMENT Checks if the glint effect should be applied when the item is rendered.
 		COMMENT

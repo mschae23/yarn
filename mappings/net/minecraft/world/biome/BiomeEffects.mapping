@@ -124,7 +124,7 @@ CLASS net/minecraft/class_4763 net/minecraft/world/biome/BiomeEffects
 		METHOD method_65136 noMusic ()Lnet/minecraft/class_4763$class_4764;
 		METHOD method_65137 musicVolume (F)Lnet/minecraft/class_4763$class_4764;
 			ARG 1 musicVolume
-		METHOD method_65138 music (Lnet/minecraft/class_6005;)Lnet/minecraft/class_4763$class_4764;
+		METHOD method_65138 music (Lnet/minecraft/class_6012;)Lnet/minecraft/class_4763$class_4764;
 			ARG 1 music
 	CLASS class_5486 GrassColorModifier
 		FIELD field_26429 CODEC Lcom/mojang/serialization/Codec;

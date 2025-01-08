@@ -14,11 +14,6 @@ CLASS net/minecraft/class_9066 net/minecraft/entity/EntityAttachments
 	METHOD method_55676 rotatePoint (Lnet/minecraft/class_243;F)Lnet/minecraft/class_243;
 		ARG 0 point
 		ARG 1 yaw
-	METHOD method_55677 scalePoints (Ljava/util/List;FFF)Ljava/util/List;
-		ARG 0 points
-		ARG 1 xScale
-		ARG 2 yScale
-		ARG 3 zScale
 	METHOD method_55678 getPoint (Lnet/minecraft/class_9064;IF)Lnet/minecraft/class_243;
 		ARG 1 type
 		ARG 2 index

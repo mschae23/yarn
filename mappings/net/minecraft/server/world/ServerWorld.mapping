@@ -95,11 +95,6 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 	METHOD method_14189 tickBlock (Lnet/minecraft/class_2338;Lnet/minecraft/class_2248;)V
 		ARG 1 pos
 		ARG 2 block
-	METHOD method_14190 getEntity (Ljava/util/UUID;)Lnet/minecraft/class_1297;
-		COMMENT {@return the entity using the UUID, or {@code null} if none was found}
-		COMMENT
-		COMMENT @see World#getEntityById
-		ARG 1 uuid
 	METHOD method_14191 sendToPlayerIfNearby (Lnet/minecraft/class_3222;ZDDDLnet/minecraft/class_2596;)Z
 		COMMENT Sends the {@code packet} to {@code player} if the player
 		COMMENT is near the provided coordinates.
@@ -224,10 +219,6 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 	METHOD method_19503 hasRaidAt (Lnet/minecraft/class_2338;)Z
 		COMMENT {@return {@code true} if a raid exists within 96 block radius of {@code pos}}
 		ARG 1 pos
-	METHOD method_19535 (Lnet/minecraft/class_2338;Lnet/minecraft/class_6880;)V
-		ARG 2 newPoiType
-	METHOD method_19536 (Lnet/minecraft/class_2338;Lnet/minecraft/class_6880;)V
-		ARG 2 oldPoiType
 	METHOD method_20588 isNearOccupiedPointOfInterest (Lnet/minecraft/class_4076;)Z
 		ARG 1 sectionPos
 	METHOD method_21624 dumpEntities (Ljava/io/Writer;Ljava/lang/Iterable;)V

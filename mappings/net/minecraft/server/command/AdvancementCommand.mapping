@@ -23,7 +23,7 @@ CLASS net/minecraft/class_3008 net/minecraft/server/command/AdvancementCommand
 		ARG 0 context
 	METHOD method_12986 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_12988 executeAdvancement (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_3008$class_3009;Ljava/util/Collection;)I
+	METHOD method_12988 executeAdvancement (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_3008$class_3009;Ljava/util/Collection;Z)I
 		ARG 0 source
 		ARG 1 targets
 		ARG 2 operation
@@ -62,7 +62,7 @@ CLASS net/minecraft/class_3008 net/minecraft/server/command/AdvancementCommand
 		FIELD field_13454 commandPrefix Ljava/lang/String;
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
 			ARG 3 name
-		METHOD method_12999 processAll (Lnet/minecraft/class_3222;Ljava/lang/Iterable;)I
+		METHOD method_12999 processAll (Lnet/minecraft/class_3222;Ljava/lang/Iterable;Z)I
 			ARG 1 player
 			ARG 2 advancements
 		METHOD method_13000 processEachCriterion (Lnet/minecraft/class_3222;Lnet/minecraft/class_8779;Ljava/lang/String;)Z

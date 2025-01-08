@@ -27,10 +27,6 @@ CLASS net/minecraft/class_279 net/minecraft/client/gl/PostEffectProcessor
 		ARG 2 textureWidth
 		ARG 3 textureHeight
 		ARG 4 framebufferSet
-	METHOD method_62236 (Lnet/minecraft/class_9962$class_9965;)Ljava/util/stream/Stream;
-		ARG 0 input
-	METHOD method_62237 (Lnet/minecraft/class_9962$class_9967;)Ljava/util/stream/Stream;
-		ARG 0 pass
 	METHOD method_62238 (Lnet/minecraft/class_9962;Lnet/minecraft/class_2960;)Z
 		ARG 1 target
 	METHOD method_62239 (Ljava/lang/String;)Ljava/lang/String;

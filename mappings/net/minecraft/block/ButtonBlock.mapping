@@ -1,21 +1,5 @@
 CLASS net/minecraft/class_2269 net/minecraft/block/ButtonBlock
-	FIELD field_10715 SOUTH_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10716 FLOOR_Z_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10717 CEILING_X_PRESSED_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10718 EAST_PRESSED_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10719 NORTH_PRESSED_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10720 EAST_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10721 CEILING_X_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10722 FLOOR_X_PRESSED_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10723 FLOOR_X_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10724 SOUTH_PRESSED_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10726 CEILING_Z_PRESSED_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10727 CEILING_Z_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10728 NORTH_SHAPE Lnet/minecraft/class_265;
 	FIELD field_10729 POWERED Lnet/minecraft/class_2746;
-	FIELD field_10730 FLOOR_Z_PRESSED_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10731 WEST_SHAPE Lnet/minecraft/class_265;
-	FIELD field_10732 WEST_PRESSED_SHAPE Lnet/minecraft/class_265;
 	FIELD field_40298 pressTicks I
 	FIELD field_42753 blockSetType Lnet/minecraft/class_8177;
 	FIELD field_46293 CODEC Lcom/mojang/serialization/MapCodec;

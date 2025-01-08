@@ -598,14 +598,7 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 1 textureMap
 	METHOD method_64945 (Lnet/minecraft/class_2248;Lnet/minecraft/class_4944;)V
 		ARG 1 textureMap
-	METHOD method_64946 (Lnet/minecraft/class_2248;Lnet/minecraft/class_4944;)V
-		ARG 1 textureMap
-	METHOD method_64947 (Lnet/minecraft/class_2248;Lnet/minecraft/class_4944;)V
-		ARG 1 textureMap
-	METHOD method_64948 (Lnet/minecraft/class_2248;Lnet/minecraft/class_4946$class_4947;)Lnet/minecraft/class_2960;
-		ARG 2 factory
 	METHOD method_64949 registerCreakingHeart (Lnet/minecraft/class_2248;)V
-		ARG 1 block
 	METHOD method_65291 registerMultifaceBlockModel (Lnet/minecraft/class_2248;)V
 		ARG 1 block
 	METHOD method_65294 (Lnet/minecraft/class_2248;Lnet/minecraft/class_4918$class_4921;Lnet/minecraft/class_2746;)V

@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_6010 net/minecraft/util/collection/Present
+	FIELD comp_2543 getWeight I
+	METHOD <init> (Ljava/lang/Object;I)V
+		ARG 1 data
+	METHOD comp_2543 getWeight ()I
+	METHOD method_34981 createCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+		ARG 0 dataCodec

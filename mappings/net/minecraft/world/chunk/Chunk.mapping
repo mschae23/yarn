@@ -40,10 +40,9 @@ CLASS net/minecraft/class_2791 net/minecraft/world/chunk/Chunk
 	METHOD method_12007 setBlockEntity (Lnet/minecraft/class_2586;)V
 		ARG 1 blockEntity
 	METHOD method_12009 getStatus ()Lnet/minecraft/class_2806;
-	METHOD method_12010 setBlockState (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Z)Lnet/minecraft/class_2680;
+	METHOD method_12010 setBlockState (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;I)Lnet/minecraft/class_2680;
 		ARG 1 pos
 		ARG 2 state
-		ARG 3 moved
 	METHOD method_12011 getHeightmaps ()Ljava/util/Collection;
 	METHOD method_12012 getPostProcessingLists ()[Lit/unimi/dsi/fastutil/shorts/ShortList;
 	METHOD method_12013 getBlockTickScheduler ()Lnet/minecraft/class_6763;

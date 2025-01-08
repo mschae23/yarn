@@ -24,10 +24,8 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		COMMENT The base chance (before applying local difficulty) that this mob will spawn with equipment.
 		COMMENT
 		COMMENT @see MobEntity#initEquipment
-	FIELD field_34043 DEFAULT_DROP_CHANCE F
 	FIELD field_38386 ITEM_PICK_UP_RANGE_EXPANDER Lnet/minecraft/class_2382;
 	FIELD field_45969 ATTACK_RANGE D
-	FIELD field_48828 bodyArmorDropChance F
 	FIELD field_48829 bodyArmor Lnet/minecraft/class_1799;
 	FIELD field_51997 RANDOM_SPAWN_BONUS_MODIFIER_ID Lnet/minecraft/class_2960;
 	FIELD field_52221 leashData Lnet/minecraft/class_9817$class_9818;
@@ -37,8 +35,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		COMMENT Contains goals used to select this entity's target.
 		COMMENT Actions in this queue are executed first so the selected target is available
 		COMMENT to the rest of the AI's goals.
-	FIELD field_6186 armorDropChances [F
-	FIELD field_6187 handDropChances [F
 	FIELD field_6188 bodyControl Lnet/minecraft/class_1330;
 	FIELD field_6189 navigation Lnet/minecraft/class_1408;
 	FIELD field_6190 visibilityCache Lnet/minecraft/class_1413;
@@ -102,7 +98,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	METHOD method_25938 canUseRangedWeapon (Lnet/minecraft/class_1811;)Z
 		ARG 1 weapon
 	METHOD method_25939 updateDropChances (Lnet/minecraft/class_1304;)V
-		ARG 1 slot
 	METHOD method_26320 prefersNewDamageableItem (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Z
 		ARG 1 newStack
 		ARG 2 oldStack
@@ -157,8 +152,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		ARG 1 equipmentTable
 	METHOD method_58635 createEquipmentLootParameters (Lnet/minecraft/class_3218;)Lnet/minecraft/class_8567;
 		ARG 1 world
-	METHOD method_5929 getDropChance (Lnet/minecraft/class_1304;)F
-		ARG 1 slot
 	METHOD method_5930 setForwardSpeed (F)V
 		ARG 1 forwardSpeed
 	METHOD method_5937 setLeftHanded (Z)V
@@ -292,8 +285,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		ARG 1 stack
 		ARG 2 attribute
 		ARG 3 slot
-	METHOD method_63634 getHandDropChances ()[F
-	METHOD method_63635 getArmorDropChances ()[F
 	METHOD method_6510 isAttacking ()Z
 	METHOD method_65345 getPreferredWeapons ()Lnet/minecraft/class_6862;
 	METHOD method_65346 prefersNewArmor (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;Lnet/minecraft/class_1304;)Z
@@ -304,9 +295,5 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		ARG 1 newStack
 		ARG 2 currentStack
 		ARG 3 slot
-	METHOD method_65898 (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
-		ARG 0 stack
-	METHOD method_65899 (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
-		ARG 0 stack
 	METHOD method_7217 setBaby (Z)V
 		ARG 1 baby

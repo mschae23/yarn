@@ -29,8 +29,6 @@ CLASS net/minecraft/class_167 net/minecraft/advancement/AdvancementProgress
 		ARG 0 entry
 	METHOD method_53661 (Ljava/util/Map;)Ljava/util/Map;
 		ARG 0 map
-	METHOD method_53662 (Ljava/util/Map$Entry;)Lnet/minecraft/class_178;
-		ARG 0 entry
 	METHOD method_53663 isCriterionObtained (Ljava/lang/String;)Z
 		ARG 1 name
 	METHOD method_727 init (Lnet/minecraft/class_8782;)V

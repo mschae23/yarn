@@ -130,7 +130,7 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		METHOD method_40051 getBoundingBox ()Lnet/minecraft/class_238;
 		METHOD method_60908 setData (Lnet/minecraft/class_846$class_849;)V
 			ARG 1 chunkData
-		METHOD method_60909 getVertexSorter ()Lnet/minecraft/class_8251;
+		METHOD method_60909 getVertexSorter (Lnet/minecraft/class_4076;)Lnet/minecraft/class_8251;
 		METHOD method_62973 setSectionPos (J)V
 			ARG 1 sectionPos
 		METHOD method_62974 getOffsetSectionPos (Lnet/minecraft/class_2350;)J

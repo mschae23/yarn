@@ -24,14 +24,14 @@ CLASS net/minecraft/class_1844 net/minecraft/component/type/PotionContentsCompon
 		ARG 1 potion
 	METHOD method_57401 matches (Lnet/minecraft/class_6880;)Z
 		ARG 1 potion
-	METHOD method_57402 forEachEffect (Ljava/util/function/Consumer;)V
+	METHOD method_57402 forEachEffect (Ljava/util/function/Consumer;F)V
 		ARG 1 effectConsumer
 	METHOD method_57403 with (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1844;
 		ARG 1 potion
 	METHOD method_57405 hasEffects ()Z
 	METHOD method_58111 mixColors (Ljava/lang/Iterable;)Ljava/util/OptionalInt;
 		ARG 0 effects
-	METHOD method_62839 apply (Lnet/minecraft/class_1309;)V
+	METHOD method_62839 apply (Lnet/minecraft/class_1309;F)V
 		ARG 1 user
 	METHOD method_64195 getName (Ljava/lang/String;)Lnet/minecraft/class_2561;
 		ARG 1 prefix

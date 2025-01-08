@@ -82,7 +82,6 @@ CLASS net/minecraft/class_1665 net/minecraft/entity/projectile/PersistentProject
 	METHOD method_7445 asItemStack ()Lnet/minecraft/class_1799;
 	METHOD method_7446 age ()V
 	METHOD method_7447 getPierceLevel ()B
-	METHOD method_7448 getDamage ()D
 	METHOD method_7450 onHit (Lnet/minecraft/class_1309;)V
 		ARG 1 target
 	METHOD method_7451 setPierceLevel (B)V

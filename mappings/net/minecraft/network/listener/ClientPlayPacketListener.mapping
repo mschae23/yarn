@@ -26,8 +26,6 @@ CLASS net/minecraft/class_2602 net/minecraft/network/listener/ClientPlayPacketLi
 		ARG 1 packet
 	METHOD method_11090 onCraftFailedResponse (Lnet/minecraft/class_2695;)V
 		ARG 1 packet
-	METHOD method_11091 onExperienceOrbSpawn (Lnet/minecraft/class_2606;)V
-		ARG 1 packet
 	METHOD method_11092 onLookAt (Lnet/minecraft/class_2707;)V
 		ARG 1 packet
 	METHOD method_11093 onEntityTrackerUpdate (Lnet/minecraft/class_2739;)V

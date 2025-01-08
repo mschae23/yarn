@@ -7,9 +7,5 @@ CLASS net/minecraft/class_4609 net/minecraft/util/math/AffineTransformations
 	METHOD method_23221 uvLock (Lnet/minecraft/class_4590;Lnet/minecraft/class_2350;)Lnet/minecraft/class_4590;
 		ARG 0 transformation
 		ARG 1 dir
-	METHOD method_23222 (Ljava/util/EnumMap;)V
-		ARG 0 map
-	METHOD method_23223 (Ljava/util/EnumMap;)V
-		ARG 0 map
 	METHOD method_35829 (Lnet/minecraft/class_4590;)Lnet/minecraft/class_4590;
 		ARG 0 transformation

@@ -233,7 +233,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	FIELD field_54812 HIGH_CONTRAST_BLOCK_OUTLINE_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_54813 highContrastBlockOutline Lnet/minecraft/class_7172;
 	METHOD <init> (Lnet/minecraft/class_310;Ljava/io/File;)V
-		ARG 1 client
 		ARG 2 optionsFile
 	METHOD method_1626 update (Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
 		ARG 1 nbt
@@ -527,8 +526,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	METHOD method_45576 createSoundVolumeOption (Ljava/lang/String;Lnet/minecraft/class_3419;)Lnet/minecraft/class_7172;
 		ARG 1 key
 		ARG 2 category
-	METHOD method_45577 (Ljava/util/EnumMap;)V
-		ARG 1 soundVolumeLevels
 	METHOD method_45578 getSoundVolumeOption (Lnet/minecraft/class_3419;)Lnet/minecraft/class_7172;
 		ARG 1 category
 	METHOD method_45580 (Ljava/lang/Double;)V

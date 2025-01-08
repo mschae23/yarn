@@ -64,7 +64,6 @@ CLASS net/minecraft/class_636 net/minecraft/client/network/ClientPlayerInteracti
 		ARG 2 recipeId
 		ARG 3 craftAll
 	METHOD method_2913 hasExperienceBar ()Z
-	METHOD method_2914 hasCreativeInventory ()Z
 	METHOD method_2915 dropCreativeStack (Lnet/minecraft/class_1799;)V
 		ARG 1 stack
 	METHOD method_2916 pickItemFromEntity (Lnet/minecraft/class_1297;Z)V

@@ -21,7 +21,5 @@ CLASS net/minecraft/class_1472 net/minecraft/entity/passive/SheepEntity
 		ARG 0 dyeColor
 	METHOD method_6635 setSheared (Z)V
 		ARG 1 sheared
-	METHOD method_6638 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1767;
-		ARG 0 color
 	METHOD method_6641 getHeadAngle (F)F
 		ARG 1 delta

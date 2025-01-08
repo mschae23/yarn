@@ -1,17 +1,7 @@
 CLASS net/minecraft/class_3709 net/minecraft/block/BellBlock
-	FIELD field_16321 EAST_WEST_WALLS_SHAPE Lnet/minecraft/class_265;
-	FIELD field_16322 EAST_WEST_SHAPE Lnet/minecraft/class_265;
-	FIELD field_16323 NORTH_WALL_SHAPE Lnet/minecraft/class_265;
 	FIELD field_16324 FACING Lnet/minecraft/class_2754;
-	FIELD field_16325 NORTH_SOUTH_SHAPE Lnet/minecraft/class_265;
 	FIELD field_16326 ATTACHMENT Lnet/minecraft/class_2754;
-	FIELD field_17087 BELL_WAIST_SHAPE Lnet/minecraft/class_265;
-	FIELD field_17088 BELL_LIP_SHAPE Lnet/minecraft/class_265;
 	FIELD field_17089 BELL_SHAPE Lnet/minecraft/class_265;
-	FIELD field_17090 NORTH_SOUTH_WALLS_SHAPE Lnet/minecraft/class_265;
-	FIELD field_17091 WEST_WALL_SHAPE Lnet/minecraft/class_265;
-	FIELD field_17092 EAST_WALL_SHAPE Lnet/minecraft/class_265;
-	FIELD field_17093 SOUTH_WALL_SHAPE Lnet/minecraft/class_265;
 	FIELD field_17094 HANGING_SHAPE Lnet/minecraft/class_265;
 	FIELD field_20648 POWERED Lnet/minecraft/class_2746;
 	FIELD field_46276 CODEC Lcom/mojang/serialization/MapCodec;

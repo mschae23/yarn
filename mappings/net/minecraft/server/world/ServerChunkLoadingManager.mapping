@@ -35,7 +35,7 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 	FIELD field_54035 lightScheduler Lnet/minecraft/class_10171;
 	FIELD field_54964 chunksToSave Lit/unimi/dsi/fastutil/longs/LongSet;
 	FIELD field_54965 chunksBeingSavedCount Ljava/util/concurrent/atomic/AtomicInteger;
-	METHOD <init> (Lnet/minecraft/class_3218;Lnet/minecraft/class_32$class_5143;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_3485;Ljava/util/concurrent/Executor;Lnet/minecraft/class_1255;Lnet/minecraft/class_2823;Lnet/minecraft/class_2794;Lnet/minecraft/class_3949;Lnet/minecraft/class_5567;Ljava/util/function/Supplier;IZ)V
+	METHOD <init> (Lnet/minecraft/class_3218;Lnet/minecraft/class_32$class_5143;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_3485;Ljava/util/concurrent/Executor;Lnet/minecraft/class_1255;Lnet/minecraft/class_2823;Lnet/minecraft/class_2794;Lnet/minecraft/class_3949;Lnet/minecraft/class_5567;Ljava/util/function/Supplier;Lnet/minecraft/class_10592;IZ)V
 		ARG 1 world
 		ARG 2 session
 		ARG 3 dataFixer
@@ -47,8 +47,6 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 9 worldGenerationProgressListener
 		ARG 10 chunkStatusChangeListener
 		ARG 11 persistentStateManagerFactory
-		ARG 12 viewDistance
-		ARG 13 dsync
 	METHOD method_17212 getLightingProvider ()Lnet/minecraft/class_3227;
 	METHOD method_17214 setViewDistance (I)V
 		ARG 1 watchDistance
@@ -336,6 +334,5 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		METHOD method_27906 adjustTrackingDistance (I)I
 			ARG 1 initialDistance
 	CLASS class_3216 TicketManager
-		METHOD <init> (Lnet/minecraft/class_3898;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)V
-			ARG 2 workerExecutor
+		METHOD <init> (Lnet/minecraft/class_3898;Lnet/minecraft/class_10592;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)V
 			ARG 3 mainThreadExecutor

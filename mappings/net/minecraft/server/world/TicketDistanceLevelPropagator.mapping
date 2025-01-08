@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_4077 net/minecraft/server/world/TicketDistanceLevelPropagator
+	FIELD field_44854 UNLOADED I
+	METHOD method_18746 update (I)I
+		ARG 1 distance

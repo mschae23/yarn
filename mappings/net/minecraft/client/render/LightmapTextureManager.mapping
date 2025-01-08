@@ -39,8 +39,6 @@ CLASS net/minecraft/class_765 net/minecraft/client/render/LightmapTextureManager
 		ARG 1 entity
 		ARG 2 factor
 		ARG 3 delta
-	METHOD method_42597 getDarknessFactor (F)F
-		ARG 1 delta
 	METHOD method_62226 getBrightness (FI)F
 		ARG 0 ambientLight
 		ARG 1 lightLevel

@@ -43,8 +43,6 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 		ARG 1 context
 	METHOD method_1848 drawRightText (Lnet/minecraft/class_332;)V
 		ARG 1 context
-	METHOD method_20455 (Ljava/util/EnumMap;)V
-		ARG 0 types
 	METHOD method_20603 getServerWorld ()Lnet/minecraft/class_3218;
 	METHOD method_27870 (Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_1311;)Ljava/lang/String;
 		ARG 1 group

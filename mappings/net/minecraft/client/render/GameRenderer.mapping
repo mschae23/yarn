@@ -32,7 +32,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_4025 viewDistance F
 	FIELD field_4028 lightmapTextureManager Lnet/minecraft/class_765;
 	FIELD field_4029 floatingItemWidth F
-	FIELD field_47130 ticks I
 	FIELD field_53066 pool Lnet/minecraft/class_9920;
 	FIELD field_53898 postProcessorId Lnet/minecraft/class_2960;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_759;Lnet/minecraft/class_3300;Lnet/minecraft/class_4599;)V

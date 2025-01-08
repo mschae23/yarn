@@ -92,7 +92,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_21825 clipAtLedge ()Z
 	METHOD method_23668 checkGliding ()Z
 	METHOD method_23669 startGliding ()V
-	METHOD method_23670 stopGliding ()V
 	METHOD method_26956 createPlayerAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_31548 getInventory ()Lnet/minecraft/class_1661;
 	METHOD method_31549 getAbilities ()Lnet/minecraft/class_1656;
@@ -241,7 +240,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_7291 openHorseInventory (Lnet/minecraft/class_1496;Lnet/minecraft/class_1263;)V
 		ARG 1 horse
 		ARG 2 inventory
-	METHOD method_7292 getLuck ()F
 	METHOD method_7293 vanishCursedItems ()V
 	METHOD method_7294 canModifyBlocks ()Z
 	METHOD method_7295 updateWaterSubmersionState ()Z

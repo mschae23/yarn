@@ -39,8 +39,6 @@ CLASS net/minecraft/class_4019 net/minecraft/entity/passive/FoxEntity
 		ARG 1 world
 	METHOD method_18265 (Lnet/minecraft/class_1542;)Z
 		ARG 0 item
-	METHOD method_18266 addTrustedUuid (Ljava/util/UUID;)V
-		ARG 1 uuid
 	METHOD method_18267 (Lnet/minecraft/class_1297;)Z
 		ARG 0 entity
 	METHOD method_18269 setFoxFlag (IZ)V
@@ -52,7 +50,6 @@ CLASS net/minecraft/class_4019 net/minecraft/entity/passive/FoxEntity
 	METHOD method_18275 isFullyCrouched ()Z
 	METHOD method_18277 isRollingHead ()Z
 	METHOD method_18280 addTypeSpecificGoals ()V
-	METHOD method_18281 getTrustedUuids ()Ljava/util/List;
 	METHOD method_18282 isAggressive ()Z
 	METHOD method_18283 stopSleeping ()V
 	METHOD method_18284 stopActions ()V
@@ -81,8 +78,7 @@ CLASS net/minecraft/class_4019 net/minecraft/entity/passive/FoxEntity
 		ARG 1 aggressive
 	METHOD method_18302 setSleeping (Z)V
 		ARG 1 sleeping
-	METHOD method_18428 canTrust (Ljava/util/UUID;)Z
-		ARG 1 uuid
+	METHOD method_18428 canTrust (Lnet/minecraft/class_1309;)Z
 	METHOD method_18429 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
 		ARG 1 entity
 		ARG 2 world

@@ -3,8 +3,6 @@ CLASS net/minecraft/class_5354 net/minecraft/entity/mob/Angerable
 	FIELD field_30094 ANGRY_AT_KEY Ljava/lang/String;
 	METHOD method_18395 canTarget (Lnet/minecraft/class_1309;)Z
 		ARG 1 target
-	METHOD method_29505 setAttacking (Lnet/minecraft/class_1657;)V
-		ARG 1 attacking
 	METHOD method_29507 getAngerTime ()I
 	METHOD method_29508 getAngryAt ()Ljava/util/UUID;
 	METHOD method_29509 chooseRandomAngerTime ()V

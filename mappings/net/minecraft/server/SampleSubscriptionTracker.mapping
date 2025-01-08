@@ -2,7 +2,7 @@ CLASS net/minecraft/class_9188 net/minecraft/server/SampleSubscriptionTracker
 	FIELD field_48808 STOP_TRACK_TICK I
 	FIELD field_48809 STOP_TRACK_MS I
 	FIELD field_48810 playerManager Lnet/minecraft/class_3324;
-	FIELD field_48811 subscriptionMap Ljava/util/EnumMap;
+	FIELD field_48811 subscriptionMap Ljava/util/Map;
 	FIELD field_48812 pendingQueue Ljava/util/Queue;
 	METHOD <init> (Lnet/minecraft/class_3324;)V
 		ARG 1 playerManager

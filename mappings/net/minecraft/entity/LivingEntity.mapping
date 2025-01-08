@@ -22,7 +22,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_42108 limbAnimator Lnet/minecraft/class_8080;
 	FIELD field_45123 serverHeadYaw D
 	FIELD field_45740 ACTIVE_EFFECTS_NBT_KEY Ljava/lang/String;
-	FIELD field_47757 prevScale F
 	FIELD field_48826 syncedBodyArmorStack Lnet/minecraft/class_1799;
 	FIELD field_49792 POTION_SWIRLS Lnet/minecraft/class_2940;
 	FIELD field_51569 riptideAttackDamage F
@@ -32,24 +31,19 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_51996 SPRINTING_SPEED_MODIFIER_ID Lnet/minecraft/class_2960;
 	FIELD field_52447 elytraFlightController Lnet/minecraft/class_9863;
 	FIELD field_54564 NOT_WEARING_GAZE_DISGUISE_PREDICATE Ljava/util/function/Predicate;
-	FIELD field_6210 bodyTrackingIncrements I
 	FIELD field_6212 sidewaysSpeed F
 	FIELD field_6213 deathTime I
 	FIELD field_6214 POTION_SWIRLS_AMBIENT Lnet/minecraft/class_2940;
-	FIELD field_6217 prevStepBobbingAmount F
 	FIELD field_6218 stuckArrowTimer I
 	FIELD field_6219 STUCK_ARROW_COUNT Lnet/minecraft/class_2940;
 	FIELD field_6220 prevBodyYaw F
-	FIELD field_6221 serverPitch D
 	FIELD field_6222 itemUseTimeLeft I
-	FIELD field_6224 serverX D
 	FIELD field_6226 lastDamageTime J
 	FIELD field_6227 upwardSpeed F
 	FIELD field_6228 jumpingCooldown I
 	FIELD field_6229 lastHandSwingProgress F
 	FIELD field_6230 lastAttackedTime I
 	FIELD field_6231 SPRINTING_SPEED_BOOST Lnet/minecraft/class_1322;
-	FIELD field_6233 stepBobbingAmount F
 	FIELD field_6234 syncedHandStacks Lnet/minecraft/class_2371;
 	FIELD field_6235 hurtTime I
 	FIELD field_6236 attacking Lnet/minecraft/class_1309;
@@ -57,8 +51,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_6239 glidingTicks I
 	FIELD field_6241 headYaw F
 	FIELD field_6243 leaningPitch F
-	FIELD field_6244 randomLargeSeed F
-	FIELD field_6245 serverY D
 	FIELD field_6246 absorptionAmount F
 	FIELD field_6247 HEALTH Lnet/minecraft/class_2940;
 	FIELD field_6248 syncedArmorStacks Lnet/minecraft/class_2371;
@@ -67,15 +59,12 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_6252 handSwinging Z
 	FIELD field_6253 lastDamageTaken F
 	FIELD field_6254 maxHurtTime I
-	FIELD field_6255 lookDirection F
 	FIELD field_6256 damageTracker Lnet/minecraft/class_1283;
 	FIELD field_6257 LIVING_FLAGS Lnet/minecraft/class_2940;
-	FIELD field_6258 attackingPlayer Lnet/minecraft/class_1657;
+	FIELD field_6258 attackingPlayer Lnet/minecraft/class_10583;
 	FIELD field_6259 prevHeadYaw F
 	FIELD field_6260 attributes Lnet/minecraft/class_5131;
 	FIELD field_6261 riptideTicks I
-	FIELD field_6262 randomSmallSeed F
-	FIELD field_6263 serverZ D
 	FIELD field_6264 lastLeaningPitch F
 	FIELD field_6265 headTrackingIncrements I
 	FIELD field_6266 preferredHand Lnet/minecraft/class_1268;
@@ -84,8 +73,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_6270 lastAttackTime I
 	FIELD field_6272 dead Z
 	FIELD field_6273 lastAttackedTicks I
-	FIELD field_6274 attacker Lnet/minecraft/class_1309;
-	FIELD field_6275 prevLookDirection F
 	FIELD field_6276 lastDamageSource Lnet/minecraft/class_1282;
 	FIELD field_6277 activeItemStack Lnet/minecraft/class_1799;
 	FIELD field_6278 despawnCounter I
@@ -93,7 +80,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_6280 activeStatusEffects Ljava/util/Map;
 	FIELD field_6282 jumping Z
 	FIELD field_6283 bodyYaw F
-	FIELD field_6284 serverYaw D
 	FIELD field_6285 effectsChanged Z
 	FIELD field_6287 movementSpeed F
 	METHOD method_16077 dropLoot (Lnet/minecraft/class_3218;Lnet/minecraft/class_1282;Z)V
@@ -227,8 +213,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 item
 	METHOD method_29503 hurtByWater ()Z
 	METHOD method_29504 isDead ()Z
-	METHOD method_29505 setAttacking (Lnet/minecraft/class_1657;)V
-		ARG 1 attacking
+	METHOD method_29505 setAttacking (Lnet/minecraft/class_10583;I)V
 	METHOD method_29920 shouldSwimInFluids ()Z
 	METHOD method_30120 (Ljava/util/List;Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 2 slot
@@ -455,9 +440,8 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6028 getHandSwingDuration ()I
 	METHOD method_6029 getMovementSpeed ()F
 	METHOD method_6030 getActiveItem ()Lnet/minecraft/class_1799;
-	METHOD method_6031 turnHead (FF)F
+	METHOD method_6031 turnHead (F)V
 		ARG 1 bodyRotation
-		ARG 2 headRotation
 	METHOD method_6032 getHealth ()F
 	METHOD method_6033 setHealth (F)V
 		ARG 1 health
@@ -671,7 +655,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6132 applyArmorToDamage (Lnet/minecraft/class_1282;F)F
 		ARG 1 source
 		ARG 2 amount
-	METHOD method_61417 travelGliding ()V
+	METHOD method_61417 travelGliding (Lnet/minecraft/class_243;)V
 	METHOD method_61418 (DLnet/minecraft/class_243;)Lnet/minecraft/class_243;
 		ARG 2 pos
 	METHOD method_61419 forEachShearedItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_5321;Lnet/minecraft/class_1799;Ljava/util/function/BiConsumer;)V
@@ -751,5 +735,5 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 damageSource
 	METHOD method_65344 becomeAngry (Lnet/minecraft/class_1282;)V
 		ARG 1 damageSource
-	METHOD method_65897 canBeNameTagged ()Z
+	METHOD method_7292 getLuck ()F
 	CLASS class_6823 FallSounds

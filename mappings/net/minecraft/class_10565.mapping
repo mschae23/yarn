@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_10565
+	METHOD method_20445 fixNbt (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;

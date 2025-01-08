@@ -95,11 +95,9 @@ CLASS net/minecraft/class_1293 net/minecraft/entity/effect/StatusEffectInstance
 	METHOD method_5583 fromNbt (Lnet/minecraft/class_2487;)Lnet/minecraft/class_1293;
 		ARG 0 nbt
 	METHOD method_5584 getDuration ()I
-	METHOD method_5585 update (Lnet/minecraft/class_1309;Ljava/lang/Runnable;)Z
-		ARG 1 entity
-		ARG 2 overwriteCallback
+	METHOD method_5585 update (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Ljava/lang/Runnable;)Z
 	METHOD method_5586 getTranslationKey ()Ljava/lang/String;
-	METHOD method_5588 updateDuration ()I
+	METHOD method_5588 updateDuration ()V
 	METHOD method_5590 upgrade (Lnet/minecraft/class_1293;)Z
 		ARG 1 that
 	METHOD method_5591 isAmbient ()Z
@@ -142,10 +140,6 @@ CLASS net/minecraft/class_1293 net/minecraft/entity/effect/StatusEffectInstance
 			ARG 2 tickDelta
 		METHOD method_55661 update (Lnet/minecraft/class_1293;)V
 			ARG 1 effect
-		METHOD method_55662 getTarget (Lnet/minecraft/class_1293;)F
-			ARG 0 effect
-		METHOD method_55663 getFadeTicks (Lnet/minecraft/class_1293;)I
-			ARG 0 effect
 	CLASS class_9195 Parameters
 		FIELD field_48822 CODEC Lcom/mojang/serialization/MapCodec;
 		FIELD field_49208 PACKET_CODEC Lnet/minecraft/class_9139;

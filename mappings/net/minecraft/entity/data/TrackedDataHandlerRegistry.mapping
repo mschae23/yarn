@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_2943 net/minecraft/entity/data/TrackedDataHandlerRegistry
 	FIELD field_13312 BLOCK_STATE Lnet/minecraft/class_2941;
-	FIELD field_13313 OPTIONAL_UUID Lnet/minecraft/class_2941;
 	FIELD field_13314 PARTICLE Lnet/minecraft/class_2941;
 	FIELD field_13315 OPTIONAL_BLOCK_POS Lnet/minecraft/class_2941;
 	FIELD field_13316 ROTATION Lnet/minecraft/class_2941;

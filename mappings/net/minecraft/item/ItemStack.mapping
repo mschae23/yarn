@@ -623,4 +623,3 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		COMMENT @see #isDamageable
 		COMMENT @see #getDamage
 	CLASS 1
-		FIELD field_48351 ITEM_PACKET_CODEC Lnet/minecraft/class_9139;
