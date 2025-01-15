@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1474 net/minecraft/entity/passive/TropicalFishEntity
-	FIELD field_30378 BUCKET_VARIANT_TAG_KEY Ljava/lang/String;
 	FIELD field_41573 COMMON_VARIANTS Ljava/util/List;
 	FIELD field_6874 VARIANT Lnet/minecraft/class_2940;
 	FIELD field_6877 commonSpawn Z

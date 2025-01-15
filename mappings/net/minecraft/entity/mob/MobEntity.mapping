@@ -26,7 +26,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		COMMENT @see MobEntity#initEquipment
 	FIELD field_38386 ITEM_PICK_UP_RANGE_EXPANDER Lnet/minecraft/class_2382;
 	FIELD field_45969 ATTACK_RANGE D
-	FIELD field_48829 bodyArmor Lnet/minecraft/class_1799;
 	FIELD field_51997 RANDOM_SPAWN_BONUS_MODIFIER_ID Lnet/minecraft/class_2960;
 	FIELD field_52221 leashData Lnet/minecraft/class_9817$class_9818;
 	FIELD field_52448 EQUIPMENT_INIT_ORDER Ljava/util/List;
@@ -43,7 +42,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	FIELD field_6191 ambientSoundChance I
 	FIELD field_6193 MOB_FLAGS Lnet/minecraft/class_2940;
 	FIELD field_6194 experiencePoints I
-	FIELD field_6195 handItems Lnet/minecraft/class_2371;
 	FIELD field_6196 pathfindingPenalties Ljava/util/Map;
 	FIELD field_6198 lootTable Ljava/util/Optional;
 	FIELD field_6199 target Lnet/minecraft/class_1309;
@@ -53,7 +51,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		COMMENT entity as determined during the {@link MobEntity#targetSelector}'s execution.
 	FIELD field_6203 canPickUpLoot Z
 	FIELD field_6204 jumpControl Lnet/minecraft/class_1334;
-	FIELD field_6205 armorItems Lnet/minecraft/class_2371;
 	FIELD field_6206 lookControl Lnet/minecraft/class_1333;
 	FIELD field_6207 moveControl Lnet/minecraft/class_1335;
 	METHOD method_17326 cannotDespawn ()Z
@@ -130,8 +127,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		ARG 3 localDifficulty
 	METHOD method_35055 clearPositionTarget ()V
 	METHOD method_35056 clearGoalsAndTasks ()V
-	METHOD method_37341 (Lnet/minecraft/class_1799;)V
-		ARG 0 stack
 	METHOD method_42150 isInAttackRange (Lnet/minecraft/class_1309;)Z
 		ARG 1 entity
 	METHOD method_42646 getItemPickUpRangeExpander ()Lnet/minecraft/class_2382;

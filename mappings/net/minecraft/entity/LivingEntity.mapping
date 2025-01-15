@@ -22,7 +22,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_42108 limbAnimator Lnet/minecraft/class_8080;
 	FIELD field_45123 serverHeadYaw D
 	FIELD field_45740 ACTIVE_EFFECTS_NBT_KEY Ljava/lang/String;
-	FIELD field_48826 syncedBodyArmorStack Lnet/minecraft/class_1799;
 	FIELD field_49792 POTION_SWIRLS Lnet/minecraft/class_2940;
 	FIELD field_51569 riptideAttackDamage F
 	FIELD field_51570 riptideStack Lnet/minecraft/class_1799;
@@ -46,7 +45,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_6229 lastHandSwingProgress F
 	FIELD field_6230 lastAttackedTime I
 	FIELD field_6231 SPRINTING_SPEED_BOOST Lnet/minecraft/class_1322;
-	FIELD field_6234 syncedHandStacks Lnet/minecraft/class_2371;
 	FIELD field_6235 hurtTime I
 	FIELD field_6236 attacking Lnet/minecraft/class_1309;
 	FIELD field_6238 playerHitTimer I
@@ -55,7 +53,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_6243 leaningPitch F
 	FIELD field_6246 absorptionAmount F
 	FIELD field_6247 HEALTH Lnet/minecraft/class_2940;
-	FIELD field_6248 syncedArmorStacks Lnet/minecraft/class_2371;
 	FIELD field_6250 forwardSpeed F
 	FIELD field_6251 handSwingProgress F
 	FIELD field_6252 handSwinging Z
@@ -142,9 +139,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_21755 setStingerCount (I)V
 		ARG 1 stingerCount
 	METHOD method_23328 playBlockFallSound ()V
-	METHOD method_23329 computeFallDamage (FF)I
-		ARG 1 fallDistance
-		ARG 2 damageMultiplier
+	METHOD method_23329 computeFallDamage (DF)I
 	METHOD method_23667 swingHand (Lnet/minecraft/class_1268;Z)V
 		ARG 1 hand
 		ARG 2 fromServerPlayer
@@ -219,27 +214,14 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 attackingPlayer
 		ARG 2 playerHitTimer
 	METHOD method_29920 shouldSwimInFluids ()Z
-	METHOD method_30120 (Ljava/util/List;Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
-		ARG 2 slot
-		ARG 3 stack
 	METHOD method_30121 checkHandStackSwap (Ljava/util/Map;)V
 		COMMENT Notifies nearby players if the stacks in the hands have been swapped.
 		ARG 1 equipmentChanges
-	METHOD method_30122 setSyncedArmorStack (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
-		ARG 1 slot
-		ARG 2 armor
 	METHOD method_30123 sendEquipmentChanges (Ljava/util/Map;)V
 		COMMENT Sends equipment changes to nearby players.
 		COMMENT
 		COMMENT @see #sendEquipmentChanges()
 		ARG 1 equipmentChanges
-	METHOD method_30124 setSyncedHandStack (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
-		ARG 1 slot
-		ARG 2 stack
-	METHOD method_30125 getSyncedArmorStack (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
-		ARG 1 slot
-	METHOD method_30126 getSyncedHandStack (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
-		ARG 1 slot
 	METHOD method_30127 swapHandStacks ()V
 	METHOD method_30128 sendEquipmentChanges ()V
 		COMMENT Sends equipment changes to nearby players.
@@ -345,9 +327,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 sound
 	METHOD method_56079 getSlotForHand (Lnet/minecraft/class_1268;)Lnet/minecraft/class_1304;
 		ARG 0 hand
-	METHOD method_5661 getArmorItems ()Ljava/lang/Iterable;
-	METHOD method_56674 getAllArmorItems ()Ljava/lang/Iterable;
-	METHOD method_56675 getEquippedItems ()Ljava/lang/Iterable;
 	METHOD method_5673 equipStack (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
@@ -366,7 +345,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 2 amount
 		ARG 3 slots
 	METHOD method_58150 updatePotionSwirls ()V
-	METHOD method_5877 getHandItems ()Ljava/lang/Iterable;
 	METHOD method_5936 canPickUpLoot ()Z
 	METHOD method_5973 canTarget (Lnet/minecraft/class_1299;)Z
 		ARG 1 type
@@ -629,8 +607,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6115 isUsingItem ()Z
 	METHOD method_6116 onEquipStack (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
-		ARG 2 oldStack
-		ARG 3 newStack
 	METHOD method_6117 getLastAttackedTime ()I
 	METHOD method_6118 getEquippedStack (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
 		ARG 1 slot

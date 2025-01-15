@@ -14,7 +14,5 @@ CLASS net/minecraft/class_10280 net/minecraft/entity/mob/CreakingBrain
 		ARG 1 creaking
 	METHOD method_64637 addIdleTasks (Lnet/minecraft/class_4095;)V
 		ARG 0 brain
-	METHOD method_64638 addFightTasks (Lnet/minecraft/class_4095;)V
-		ARG 0 brain
-	METHOD method_64639 create (Lnet/minecraft/class_4095;)Lnet/minecraft/class_4095;
-		ARG 0 brain
+	METHOD method_64638 addFightTasks (Lnet/minecraft/class_10275;Lnet/minecraft/class_4095;)V
+	METHOD method_64639 create (Lnet/minecraft/class_10275;Lnet/minecraft/class_4095;)Lnet/minecraft/class_4095;

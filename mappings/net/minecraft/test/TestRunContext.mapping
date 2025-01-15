@@ -9,7 +9,6 @@ CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
 	FIELD field_48476 toBeRetried Ljava/util/List;
 	FIELD field_48477 batcher Lnet/minecraft/class_4520$class_9116;
 	FIELD field_48478 stopped Z
-	FIELD field_48479 currentBatch Lnet/minecraft/class_4514;
 	FIELD field_48480 reuseSpawner Lnet/minecraft/class_4520$class_9117;
 	FIELD field_48481 initialSpawner Lnet/minecraft/class_4520$class_9117;
 	FIELD field_52279 stopAfterFailure Z
@@ -37,7 +36,7 @@ CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
 	METHOD method_56225 (Lnet/minecraft/class_4517;Lnet/minecraft/class_4517;Lnet/minecraft/class_4518;)V
 		ARG 3 listener
 	METHOD method_56226 start ()V
-	METHOD method_56227 (Lnet/minecraft/class_9114;)V
+	METHOD method_56227 (Lnet/minecraft/class_4514;Lnet/minecraft/class_9114;)V
 		ARG 1 listener
 	METHOD method_56228 prepareStructure (Lnet/minecraft/class_4517;)Ljava/util/Optional;
 		ARG 1 oldState
@@ -51,7 +50,7 @@ CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
 		METHOD method_56232 onFinished ()V
 		METHOD method_56233 (J)V
 			ARG 1 chunkPos
-		METHOD method_56234 (Lnet/minecraft/class_9114;)V
+		METHOD method_56234 (Lnet/minecraft/class_4514;Lnet/minecraft/class_9114;)V
 			ARG 1 listener
 		METHOD method_61094 (J)V
 			ARG 1 chunkPos

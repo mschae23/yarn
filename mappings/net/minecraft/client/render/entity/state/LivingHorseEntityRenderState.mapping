@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_10019 net/minecraft/client/render/entity/state/LivingHorseEntityRenderState
-	FIELD field_53346 saddled Z
 	FIELD field_53347 hasPassengers Z
 	FIELD field_53348 waggingTail Z
 	FIELD field_53349 eatingGrassAnimationProgress F

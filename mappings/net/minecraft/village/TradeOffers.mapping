@@ -119,10 +119,6 @@ CLASS net/minecraft/class_3853 net/minecraft/village/TradeOffers
 			ARG 2 maxUses
 			ARG 3 experience
 			ARG 4 map
-		METHOD method_19201 (Lnet/minecraft/class_3854;)V
-			ARG 0 villagerType
-		METHOD method_19202 (Ljava/util/Map;Lnet/minecraft/class_3854;)Z
-			ARG 1 villagerType
 	CLASS class_4163 SellEnchantedToolFactory
 		FIELD field_18558 tool Lnet/minecraft/class_1799;
 		FIELD field_18559 basePrice I
@@ -282,11 +278,6 @@ CLASS net/minecraft/class_3853 net/minecraft/village/TradeOffers
 	CLASS class_8640 TypedWrapperFactory
 		FIELD comp_1962 typeToFactory Ljava/util/Map;
 		METHOD comp_1962 typeToFactory ()Ljava/util/Map;
-		METHOD method_53833 (Lnet/minecraft/class_3853$class_1652;Lnet/minecraft/class_3854;)Lnet/minecraft/class_3853$class_1652;
-			ARG 1 type
-		METHOD method_53834 of (Lnet/minecraft/class_3853$class_1652;[Lnet/minecraft/class_3854;)Lnet/minecraft/class_3853$class_8640;
+		METHOD method_53834 of (Lnet/minecraft/class_3853$class_1652;[Lnet/minecraft/class_5321;)Lnet/minecraft/class_3853$class_8640;
 			ARG 0 factory
-			ARG 1 types
-		METHOD method_53835 (Lnet/minecraft/class_3854;)Lnet/minecraft/class_3854;
-			ARG 0 type
 	CLASS class_8793 EmptyFactory

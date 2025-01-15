@@ -203,7 +203,7 @@ CLASS net/minecraft/class_9139 net/minecraft/network/codec/PacketCodec
 		ARG 14 codec8
 		ARG 15 from8
 		ARG 16 to
-	CLASS 7
+	CLASS 8
 		FIELD field_49712 codecSupplier Ljava/util/function/Supplier;
 	CLASS class_9140 ResultFunction
 		METHOD apply (Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;

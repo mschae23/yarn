@@ -8,8 +8,6 @@ CLASS net/minecraft/class_9329 net/minecraft/predicate/ComponentPredicate
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
 	METHOD method_57862 builder ()Lnet/minecraft/class_9329$class_9330;
-	METHOD method_57864 test (Lnet/minecraft/class_9322;)Z
-		ARG 1 holder
 	METHOD method_57865 of (Lnet/minecraft/class_9323;)Lnet/minecraft/class_9329;
 		ARG 0 components
 	METHOD method_57866 (Lnet/minecraft/class_9329;)Ljava/util/List;
