@@ -1,37 +1,70 @@
-CLASS net/minecraft/class_6765 net/minecraft/world/biome/source/util/VanillaTerrainParametersCreator
+CLASS net/minecraft/class_6765 net/minecraft/world/biome/source/overworld/OverworldTerrainParameters
 	FIELD field_38028 IDENTITY Lnet/minecraft/class_6501;
 	FIELD field_38029 OFFSET_AMPLIFIER Lnet/minecraft/class_6501;
 	FIELD field_38030 FACTOR_AMPLIFIER Lnet/minecraft/class_6501;
 	FIELD field_38031 JAGGEDNESS_AMPLIFIER Lnet/minecraft/class_6501;
-	METHOD method_42046 getOffsetValue (FFF)F
-	METHOD method_42048 (Lnet/minecraft/class_6501;FFFFFFLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42045 getMountainStartLocation (F)F
+		ARG 0 mountainStrength
+	METHOD method_42046 getMountainOffset (FFF)F
 		ARG 0 ridgesFolded
-		ARG 1 continentalness
+		ARG 1 mountainStrength
+		ARG 2 riverCutoff
+	METHOD method_42047 slope (FFFF)F
+		ARG 0 y1
+		ARG 1 y2
+		ARG 2 x1
+		ARG 3 x2
+	METHOD method_42048 createErodedContinentalOffsetSpline (Lnet/minecraft/class_6501;FFFFFFLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+		ARG 0 ridgesFolded
+		ARG 1 valleyOffset
+		ARG 2 lowOffset
+		ARG 3 midOffset
+		ARG 4 highOffset
+		ARG 5 peakOffset
+		ARG 6 minValleyDerivative
 		ARG 7 amplifier
-	METHOD method_42049 (Lnet/minecraft/class_6501;FLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42049 createRidgeJaggednessSpline (Lnet/minecraft/class_6501;FLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
 		ARG 0 ridges
+		ARG 1 value
 		ARG 2 amplifier
-	METHOD method_42050 (Lnet/minecraft/class_6501;FZLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42050 createMountainousOffsetSpline (Lnet/minecraft/class_6501;FZLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
 		ARG 0 ridgesFolded
+		ARG 1 mountainStrength
+		ARG 2 plateauStart
 		ARG 3 amplifier
 	METHOD method_42051 createContinentalOffsetSpline (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFFFFFZZLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
 		ARG 0 erosion
 		ARG 1 ridgesFolded
-		ARG 2 continentalness
+		ARG 2 valleyOffset
+		ARG 3 highOffset
+		ARG 4 peakOffset
+		ARG 5 mountainStrength
+		ARG 6 lowOffset
+		ARG 7 highErosionOffset
+		ARG 8 addHighErosionSplines
+		ARG 9 plateauMountainStart
 		ARG 10 amplifier
-	METHOD method_42052 (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42052 createMountainJaggednessSpline (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
 		ARG 0 ridges
 		ARG 1 ridgesFolded
+		ARG 2 peakEndValue
+		ARG 3 peakStartValue
 		ARG 4 amplifier
-	METHOD method_42053 (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFFFLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42053 createContinentalJaggednessSpline (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFFFLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
 		ARG 0 erosion
 		ARG 1 ridges
 		ARG 2 ridgesFolded
+		ARG 3 extremePeakStartValue
+		ARG 4 peakStartValue
+		ARG 5 extremePeakEndValue
+		ARG 6 peakEndValue
 		ARG 7 amplifier
-	METHOD method_42054 (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FZLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42054 createContinentalFactorSpline (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FZLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
 		ARG 0 erosion
 		ARG 1 ridges
 		ARG 2 ridgesFolded
+		ARG 3 neutralFactor
+		ARG 4 nearCoast
 		ARG 5 amplifier
 	METHOD method_42055 createFactorSpline (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Z)Lnet/minecraft/class_6492;
 		COMMENT Creates the spline for terrain factor.

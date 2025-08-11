@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6554 net/minecraft/world/biome/source/util/VanillaBiomeParameters
+CLASS net/minecraft/class_6554 net/minecraft/world/biome/source/overworld/OverworldBiomeParameters
 	FIELD field_34500 MAX_VALLEY_WEIRDNESS F
 	FIELD field_34502 MAX_HIGH_WEIRDNESS F
 	FIELD field_34503 MAX_PEAK_WEIRDNESS F
